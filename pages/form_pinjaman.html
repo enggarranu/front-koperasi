@@ -686,7 +686,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
                                         </div>
                                         <div class="form-actions">
-                                            <button type="button" class="btn blue" onclick="hit_register_anggota()">Submit</button>
+                                            <button type="button" class="btn blue" onclick="hit_register_pinjaman()">Submit</button>
                                             <button type="button" class="btn default">Cancel</button>
                                         </div>
                                     </form>
@@ -1364,7 +1364,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
             $(".form-group").keypress(function (e) {
                 if (e.which == '13') {
-                    hit_register_anggota();
+                    hit_register_pinjaman();
                 }
             });
 
@@ -1409,7 +1409,7 @@ License: You must have a valid license purchased only from themeforest(the above
             alert("end validation")
         }
 
-        function hit_register_anggota () {
+        function hit_register_pinjaman () {
             if (!input_validation()) {
                 return;
             }
@@ -1418,8 +1418,10 @@ License: You must have a valid license purchased only from themeforest(the above
             json_obj.tanggal_setoran = $("#datetimepicker1").val()
             json_obj.id_transaksi = $("#id_transaksi").val()
             json_obj.id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
-            json_obj.jenis_simpanan = $("#jenis_simpanan").val();
-            json_obj.nominal = $("#nominal").val();
+            json_obj.jumlah_pinjaman = $("#jumlah_pinjaman").val();
+            json_obj.bunga_pertahun = $("#bunga_pertahun").val();
+            json_obj.tenor = $("#tenor").val();
+            json_obj.angsuran_perbulan = $("#angsuran_perbulan").val();
             console.log(json_obj);
             json_obj.insert_by = sessionStorage.getItem("username")
             console.log(json_obj);
