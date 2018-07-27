@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="" />
+    <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/form_pengambilan_BAK.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_pengambilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pengambilan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_pinjaman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sidebar-menu.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -17,8 +23,26 @@
       <file leaf-file-name="sidebar-menu.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+            <state relative-caret-position="544">
+              <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_pengambilan_BAK.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/form_pengambilan_BAK.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1650">
+              <caret line="1735" column="26" lean-forward="true" selection-start-line="1660" selection-start-column="20" selection-end-line="1735" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="form_pengambilan.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/form_pengambilan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="602" column="52" lean-forward="true" selection-start-line="602" selection-start-column="52" selection-end-line="602" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -26,8 +50,8 @@
       <file leaf-file-name="list_pinjaman.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23035">
-              <caret line="1355" column="35" selection-start-line="1355" selection-start-column="35" selection-end-line="1355" selection-end-column="35" />
+            <state relative-caret-position="255">
+              <caret line="1485" column="56" selection-start-line="1485" selection-start-column="56" selection-end-line="1485" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -35,7 +59,7 @@
       <file leaf-file-name="list_setoran.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/list_setoran.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11271">
+            <state relative-caret-position="10608">
               <caret line="663" column="77" selection-start-line="663" selection-start-column="77" selection-end-line="663" selection-end-column="77" />
             </state>
           </provider>
@@ -44,17 +68,17 @@
       <file leaf-file-name="form_setoran.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_setoran.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23834">
+            <state relative-caret-position="22432">
               <caret line="1402" column="40" selection-start-line="1402" selection-start-column="40" selection-end-line="1402" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_pinjaman.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form_pinjaman.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
-              <caret line="1437" column="65" selection-start-line="1437" selection-start-column="65" selection-end-line="1437" selection-end-column="65" />
+            <state relative-caret-position="22672">
+              <caret line="1417" column="36" selection-start-line="1417" selection-start-column="21" selection-end-line="1417" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -71,8 +95,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>13</find>
-      <find>window.locat</find>
       <find>hide</find>
       <find>excel</find>
       <find>temba</find>
@@ -96,16 +118,21 @@
       <find>datetimepicker1</find>
       <find>table</find>
       <find>order-col</find>
-      <find>setoran</find>
       <find>get</find>
       <find>sideba</find>
       <find>pinjaman</find>
       <find>sidebar_menu</find>
+      <find>hit_register_pinjaman</find>
+      <find>setoran</find>
+      <find>Nomor an</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
       <replace>./theme</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -133,7 +160,6 @@
         <option value="$PROJECT_DIR$/main/pages/page_user_login_4.html" />
         <option value="$PROJECT_DIR$/pages/pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/page_user_lock_2.html" />
-        <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/page_user_login_4.html" />
         <option value="$PROJECT_DIR$/assets/pages/scripts/login-4.min.js" />
         <option value="$PROJECT_DIR$/pages/index.html" />
@@ -143,8 +169,10 @@
         <option value="$PROJECT_DIR$/pages/login.html" />
         <option value="$PROJECT_DIR$/pages/form_setoran.html" />
         <option value="$PROJECT_DIR$/pages/list_setoran.html" />
-        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
         <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
+        <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
+        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
+        <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
       </list>
     </option>
   </component>
@@ -161,9 +189,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1057" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1937" />
+    <option name="height" value="1064" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -204,14 +233,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\koperasi\main\pages" />
-      <recent name="D:\xampp\htdocs\koperasi\include" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\koperasi\pages" />
       <recent name="D:\xampp\htdocs\koperasi\main\pages" />
       <recent name="D:\xampp\htdocs\koperasi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\koperasi\main\pages" />
+      <recent name="D:\xampp\htdocs\koperasi\include" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -260,20 +289,32 @@
       <workItem from="1529486506239" duration="1228000" />
       <workItem from="1530162184908" duration="1432000" />
       <workItem from="1530377840535" duration="1039000" />
+      <workItem from="1530692570394" duration="799000" />
+      <workItem from="1530877099120" duration="856000" />
+      <workItem from="1531645332399" duration="2569000" />
+      <workItem from="1532074381752" duration="1574000" />
     </task>
+    <task id="LOCAL-00001" summary="fix fingsi pinjaman">
+      <created>1530877508124</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530877508124</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132777000" />
+    <option name="totallyTimeSpent" value="138575000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15885417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31742382" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
@@ -298,13 +339,16 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix fingsi pinjaman" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix fingsi pinjaman" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/login.html" />
     <entry file="file://$PROJECT_DIR$/theme/assets/global/plugins/backstretch/jquery.backstretch.js" />
     <entry file="file://$PROJECT_DIR$/main/assets/global/plugins/bootstrap-sweetalert/sweetalert.css" />
     <entry file="file://$PROJECT_DIR$/main/assets/pages/css/login-4.min.css" />
@@ -379,13 +423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="1724" column="19" lean-forward="true" selection-start-line="1724" selection-start-column="19" selection-end-line="1724" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/form_pengambilan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="136" selection-start-line="35" selection-start-column="136" selection-end-line="35" selection-end-column="136" />
         </state>
       </provider>
     </entry>
@@ -468,38 +505,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23035">
-          <caret line="1355" column="35" selection-start-line="1355" selection-start-column="35" selection-end-line="1355" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/list_setoran.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11271">
+        <state relative-caret-position="10608">
           <caret line="663" column="77" selection-start-line="663" selection-start-column="77" selection-end-line="663" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_setoran.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23834">
+        <state relative-caret-position="22432">
           <caret line="1402" column="40" selection-start-line="1402" selection-start-column="40" selection-end-line="1402" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
-          <caret line="1437" column="65" selection-start-line="1437" selection-start-column="65" selection-end-line="1437" selection-end-column="65" />
+        <state relative-caret-position="22672">
+          <caret line="1417" column="36" selection-start-line="1417" selection-start-column="21" selection-end-line="1417" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="1485" column="56" selection-start-line="1485" selection-start-column="56" selection-end-line="1485" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form_pengambilan_BAK.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="1735" column="26" lean-forward="true" selection-start-line="1660" selection-start-column="20" selection-end-line="1735" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form_pengambilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="602" column="52" lean-forward="true" selection-start-line="602" selection-start-column="52" selection-end-line="602" selection-end-column="52" />
         </state>
       </provider>
     </entry>
