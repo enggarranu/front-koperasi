@@ -34,15 +34,18 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!--<link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />-->
 
+
         <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
-
+        >
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN THEME GLOBAL STYLES -->
         <link href="../assets/global/css/components-rounded.min.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <!-- END THEME GLOBAL STYLES -->
         <!-- BEGIN THEME LAYOUT STYLES -->
         <link href="../assets/layouts/layout4/css/layout.min.css" rel="stylesheet" type="text/css" />
@@ -77,60 +80,397 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!-- END RESPONSIVE MENU TOGGLER -->
                 <!-- BEGIN PAGE ACTIONS -->
                 <!-- DOC: Remove "hide" class to enable the page header actions -->
-
+                <div class="page-actions">
+                    <div class="btn-group">
+                        <button type="button" class="btn red-haze btn-sm dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                            <span class="hidden-sm hidden-xs">Actions&nbsp;</span>
+                            <i class="fa fa-angle-down"></i>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-docs"></i> New Post </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-tag"></i> New Comment </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-share"></i> Share </a>
+                            </li>
+                            <li class="divider"> </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-flag"></i> Comments
+                                    <span class="badge badge-success">4</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">
+                                    <i class="icon-users"></i> Feedbacks
+                                    <span class="badge badge-danger">2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <!-- END PAGE ACTIONS -->
                 <!-- BEGIN PAGE TOP -->
                 <div class="page-top">
                     <!-- BEGIN HEADER SEARCH BOX -->
                     <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
-                    <!--<form class="search-form" action="page_general_search_2.html" method="GET">-->
-                        <!--<div class="input-group">-->
-                            <!--<input type="text" class="form-control input-sm" placeholder="Search..." name="query">-->
-                            <!--<span class="input-group-btn">-->
-                                <!--<a href="javascript:;" class="btn submit">-->
-                                    <!--<i class="icon-magnifier"></i>-->
-                                <!--</a>-->
-                            <!--</span>-->
-                        <!--</div>-->
-                    <!--</form>-->
+                    <form class="search-form" action="page_general_search_2.html" method="GET">
+                        <div class="input-group">
+                            <input type="text" class="form-control input-sm" placeholder="Search..." name="query">
+                            <span class="input-group-btn">
+                                <a href="javascript:;" class="btn submit">
+                                    <i class="icon-magnifier"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </form>
                     <!-- END HEADER SEARCH BOX -->
                     <!-- BEGIN TOP NAVIGATION MENU -->
                     <div class="top-menu">
                         <ul class="nav navbar-nav pull-right">
-                            <li class="separator hide"></li>
+                            <li class="separator hide"> </li>
                             <!-- BEGIN NOTIFICATION DROPDOWN -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                             <!-- DOC: Apply "dropdown-hoverable" class after "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
                             <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
-
+                            <li class="dropdown dropdown-extended dropdown-notification dropdown-dark" id="header_notification_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-bell"></i>
+                                    <span class="badge badge-success"> 7 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3>
+                                            <span class="bold">12 pending</span> notifications</h3>
+                                        <a href="page_user_profile_1.html">view all</a>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">just now</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-success">
+                                                            <i class="fa fa-plus"></i>
+                                                        </span> New user registered. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">3 mins</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Server #12 overloaded. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">10 mins</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Server #2 not responding. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">14 hrs</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> Application error. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">2 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Database overloaded 68%. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">3 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> A user IP blocked. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">4 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-warning">
+                                                            <i class="fa fa-bell-o"></i>
+                                                        </span> Storage Server #4 not responding dfdfdfd. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">5 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-info">
+                                                            <i class="fa fa-bullhorn"></i>
+                                                        </span> System Error. </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="time">9 days</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-danger">
+                                                            <i class="fa fa-bolt"></i>
+                                                        </span> Storage server failed. </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <!-- END NOTIFICATION DROPDOWN -->
-                            <li class="separator hide"></li>
+                            <li class="separator hide"> </li>
                             <!-- BEGIN INBOX DROPDOWN -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-inbox dropdown-dark" id="header_inbox_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-envelope-open"></i>
+                                    <span class="badge badge-danger"> 4 </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="external">
+                                        <h3>You have
+                                            <span class="bold">7 New</span> Messages</h3>
+                                        <a href="app_inbox.html">view all</a>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong </span>
+                                                        <span class="time">Just Now </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                        <span class="time">16 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar1.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Bob Nilson </span>
+                                                        <span class="time">2 hrs </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Lisa Wong </span>
+                                                        <span class="time">40 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="photo">
+                                                        <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                                    <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <!-- END INBOX DROPDOWN -->
-                            <li class="separator hide"></li>
+                            <li class="separator hide"> </li>
                             <!-- BEGIN TODO DROPDOWN -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+                            <li class="dropdown dropdown-extended dropdown-tasks dropdown-dark" id="header_task_bar">
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <i class="icon-calendar"></i>
+                                    <span class="badge badge-primary"> 3 </span>
+                                </a>
+                                <ul class="dropdown-menu extended tasks">
+                                    <li class="external">
+                                        <h3>You have
+                                            <span class="bold">12 pending</span> tasks</h3>
+                                        <a href="?p=page_todo_2">view all</a>
+                                    </li>
+                                    <li>
+                                        <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">New release v1.2 </span>
+                                                        <span class="percent">30%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">40% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Application deployment</span>
+                                                        <span class="percent">65%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">65% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Mobile app release</span>
+                                                        <span class="percent">98%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 98%;" class="progress-bar progress-bar-success" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">98% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Database migration</span>
+                                                        <span class="percent">10%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 10%;" class="progress-bar progress-bar-warning" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">10% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Web server upgrade</span>
+                                                        <span class="percent">58%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 58%;" class="progress-bar progress-bar-info" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">58% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">Mobile development</span>
+                                                        <span class="percent">85%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 85%;" class="progress-bar progress-bar-success" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">85% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">New UI release</span>
+                                                        <span class="percent">38%</span>
+                                                    </span>
+                                                    <span class="progress progress-striped">
+                                                        <span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">38% Complete</span>
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
                             <!-- END TODO DROPDOWN -->
                             <!-- BEGIN USER LOGIN DROPDOWN -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                             <li class="dropdown dropdown-user dropdown-dark">
-                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                                   data-close-others="true">
-                                    <span class="username username-hide-on-mobile"><span id="username"></span></span>
+                                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <span class="username username-hide-on-mobile"> Nick </span>
                                     <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                                    <!--<img alt="" class="img-circle" src="../assets/layouts/layout4/img/avatar9.jpg"/> -->
-                                </a>
+                                    <img alt="" class="img-circle" src="../assets/layouts/layout4/img/avatar9.jpg" /> </a>
                                 <ul class="dropdown-menu dropdown-menu-default">
                                     <li>
-                                        <a href="login.html" onclick="logout()">
+                                        <a href="page_user_profile_1.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_calendar.html">
+                                            <i class="icon-calendar"></i> My Calendar </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_inbox.html">
+                                            <i class="icon-envelope-open"></i> My Inbox
+                                            <span class="badge badge-danger"> 3 </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="app_todo_2.html">
+                                            <i class="icon-rocket"></i> My Tasks
+                                            <span class="badge badge-success"> 7 </span>
+                                        </a>
+                                    </li>
+                                    <li class="divider"> </li>
+                                    <li>
+                                        <a href="page_user_lock_1.html">
+                                            <i class="icon-lock"></i> Lock Screen </a>
+                                    </li>
+                                    <li>
+                                        <a href="page_user_login_1.html">
                                             <i class="icon-key"></i> Log Out </a>
                                     </li>
                                 </ul>
                             </li>
                             <!-- END USER LOGIN DROPDOWN -->
                             <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                            <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+                            <li class="dropdown dropdown-extended quick-sidebar-toggler">
+                                <span class="sr-only">Toggle Quick Sidebar</span>
+                                <i class="icon-logout"></i>
+                            </li>
                             <!-- END QUICK SIDEBAR TOGGLER -->
                         </ul>
                     </div>
@@ -165,8 +505,8 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="page-head">
                         <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Pendaftaran
-                                <small>Anggota</small>
+                            <h1>Pinjaman
+                                <small>Anggota Koperasi</small>
                             </h1>
                         </div>
                         <!-- END PAGE TITLE -->
@@ -260,11 +600,11 @@ License: You must have a valid license purchased only from themeforest(the above
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
-                            <a href="#">Anggota Koperasi</a>
+                            <a href="#">Pinjaman</a>
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
-                            <span class="active">Pendaftaran</span>
+                            <span class="active">Form Pinjaman</span>
                         </li>
                     </ul>
                     <!-- END PAGE BREADCRUMB -->
@@ -273,64 +613,70 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="col-md-6 ">
                             <!-- BEGIN SAMPLE FORM PORTLET-->
                             <div class="portlet light bordered">
-                                <div class="portlet-title">
-                                    <div class="caption font-red-sunglo">
-                                        <i class="icon-user-follow font-red"></i>
-                                        <span class="caption-subject bold uppercase"> Form Pendaftaran Anggota Koperasi</span>
-                                    </div>
-                                </div>
                                 <div class="portlet-body form">
                                     <form role="form">
                                         <div class="form-body">
-                                            <div class="form-group">
-                                                <label>Tanggal Registrasi</label>
-                                                    <div class="input-group input-medium date datepicker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-                                                        <input type="text" class="form-control" readonly id="datetimepicker1">
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <label>ID Transaksi</label>
+                                                    <input type="text" class="form-control" placeholder="UTI/PMB201805190001" readonly> </div>
+
+                                                <div class="form-group col-md-8">
+                                                    <label>Tanggal Pengambilan</label>
+                                                    <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
+                                                        <input type="text" class="form-control" readonly>
                                                         <span class="input-group-btn">
                                                             <button class="btn default" type="button">
                                                                 <i class="fa fa-calendar"></i>
                                                             </button>
                                                         </span>
                                                     </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="form-group col-md-4">
+                                                    <label>Nomor Anggota</label>
+                                                    <select class="form-control selectpicker" data-live-search="true" data-size="5">
+                                                        <option data-tokens="enggar">UTI/AGT123456890</option>
+                                                        <option data-tokens="ranu">0983023</option>
+                                                        <option data-tokens="satya">82829282</option>
+                                                        <option data-tokens="uti">01239812312</option>
+                                                        <option data-tokens="uti">01239812312</option>
+                                                        <option data-tokens="uti">01239812312</option>
+                                                        <option data-tokens="orang">9340239</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="form-group col-md-8">
+                                                    <label>Nama</label>
+                                                    <input type="text" class="form-control" placeholder="ENGGAR RANU H" readonly> </div>
+
                                             </div>
 
                                             <div class="form-group">
-                                                <label>ID Anggota</label>
+                                                <label>Saldo</label>
                                                 <div class="input-icon">
-                                                    <i class="fa fa-tags"></i>
-                                                    <input type="text" class="form-control" id="id_anggota" readonly> </div>
+                                                    <i class="fa fa-money font-green"></i>
+                                                    <input type="text" class="form-control" placeholder="831.123.000" readonly> </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label>Nama Anggota</label>
+                                                <label>Simpanan SR</label>
                                                 <div class="input-icon">
-                                                    <i class="fa fa-user"></i>
-                                                    <input type="text" class="form-control" placeholder="Nama Anggota" id="nama_anggota" required> </div>
+                                                    <i class="fa fa-money font-green"></i>
+                                                    <input type="text" class="form-control" placeholder="1.000" readonly> </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label>No. KTP/SIM</label>
+                                                <label>Pinjaman</label>
                                                 <div class="input-icon">
-                                                    <i class="fa fa-folder"></i>
-                                                    <input type="text" class="form-control" placeholder="No. KTP" id="no_ktp" required> </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Alamat</label>
-                                                <div class="input-icon">
-                                                    <i class="fa fa-home"></i>
-                                                    <input type="text" class="form-control" placeholder="Alamat" id="alamat"required> </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Telepon/HP</label>
-                                                <div class="input-icon">
-                                                    <i class="fa fa-phone"></i>
-                                                    <input type="text" class="form-control" placeholder="Telepon/HP" id="telepon" required> </div>
+                                                    <i class="fa fa-money font-green"></i>
+                                                    <input type="text" class="form-control" placeholder="1.000.000" readonly> </div>
                                             </div>
                                         </div>
                                         <div class="form-actions">
-                                            <button type="button" class="btn blue" onclick="hit_register_anggota()">Submit</button>
+                                            <button type="submit" class="btn blue">Submit</button>
                                             <button type="button" class="btn default">Cancel</button>
                                         </div>
                                     </form>
@@ -923,11 +1269,15 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- END QUICK NAV -->
         <!--[if lt IE 9]>
 <script src="../assets/global/plugins/respond.min.js"></script>
-<script src="../assets/global/plugins/excanvas.min.js"></script> 
-<script src="../assets/global/plugins/ie8.fix.min.js"></script> 
+<script src="../assets/global/plugins/excanvas.min.js"></script>
+<script src="../assets/global/plugins/ie8.fix.min.js"></script>
 <![endif]-->
         <!-- BEGIN CORE PLUGINS -->
         <!--<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>-->
+        <script src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script>
+        <script src="../assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
@@ -952,6 +1302,8 @@ License: You must have a valid license purchased only from themeforest(the above
         <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
         <script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+
+
         <!-- END THEME LAYOUT SCRIPTS -->
     <script>
 
@@ -959,18 +1311,10 @@ License: You must have a valid license purchased only from themeforest(the above
             if(sessionStorage.getItem("username") == null || sessionStorage.getItem("username") == "") {
                 window.location.href = 'login.html';
             }
-            var display_uname = "Hello, Selamat datang " + sessionStorage.getItem("username");
-            document.getElementById('username').innerHTML = display_uname;
-            // document.getElementById("datetimepicker1").value = moment().format("YYYY-MM-DD");
-
-            function logout() {
-                sessionStorage.removeItem("username");
-                window.location.href = 'login.html'
-            }
 
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/register_anggota_get_id",
+                url: "http://127.0.0.1:5000/get_id_transaksi_pinjaman",
                 // The key needs to match your method's input parameter (case-sensitive).
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -980,8 +1324,24 @@ License: You must have a valid license purchased only from themeforest(the above
                     var response = data['response'];
                     console.log(msg);
                     if (data['response'] == 'OK') {
-                       document.getElementById("id_anggota").value = msg;
+                       document.getElementById("id_transaksi").value = msg;
                        // document.getElementById("nama_anggota").value= msg;
+
+                        var options = '';
+                        var list_anggota = data['anggota_arr'];
+                        console.log(list_anggota);
+                        for (var i = 0; i < list_anggota.length; i++){
+                            var o_value = list_anggota[i][0]+" | "+ list_anggota[i][1];
+                            options += '<option value="'+o_value+'">'+o_value+'</option>';
+                            console.log(o_value);
+                        }
+                        document.getElementById('list_nama_anggota').innerHTML = options;
+
+
+
+
+
+
                     } else {
                         swal("Uhh.. Ohh!!!", "Gagal generate ID Anggota", "error");
                     }
@@ -994,7 +1354,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
             $(".form-group").keypress(function (e) {
                 if (e.which == '13') {
-                    hit_register_anggota();
+                    hit_register_pinjaman();
                 }
             });
 
@@ -1039,18 +1399,20 @@ License: You must have a valid license purchased only from themeforest(the above
             alert("end validation")
         }
 
-        function hit_register_anggota () {
+        function hit_register_pengambilan() {
             if (!input_validation()) {
                 return;
             }
             // alert("tembak belakang")
             var json_obj = new Object();
-            json_obj.tanggal_registrasi = get_current_date();
-            json_obj.id_anggota = $("#id_anggota").val();
-            json_obj.nama_anggota = $("#nama_anggota").val();
-            json_obj.ktp = $("#no_ktp").val();
-            json_obj.alamat = $("#alamat").val();
-            json_obj.telepon = $("#telepon").val();
+            json_obj.tanggal_setoran = $("#datetimepicker1").val()
+            json_obj.id_transaksi = $("#id_transaksi").val()
+            json_obj.id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
+            json_obj.jumlah_pinjaman = $("#jumlah_pinjaman").val();
+            json_obj.bunga_pertahun = $("#bunga_pertahun").val();
+            json_obj.tenor = $("#tenor").val();
+            json_obj.angsuran_perbulan = $("#angsuran_perbulan").val();
+            console.log(json_obj);
             json_obj.insert_by = sessionStorage.getItem("username")
             console.log(json_obj);
             swal({
@@ -1063,30 +1425,23 @@ License: You must have a valid license purchased only from themeforest(the above
                 closeOnConfirm: false
             }, function (isConfirm) {
                 if (!isConfirm) return;
+                console.log(JSON.stringify(json_obj))
                 $.ajax({
-                    url: "http://127.0.0.1:5000/register_anggota",
+                    url: "http://127.0.0.1:5000/register_pinjaman",
                     type: "POST",
                     data: JSON.stringify(json_obj),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (data) {
-                        console.log(data);
-                        if (data['response'] == 'NOK') {
-                            swal("Error!", data['msg'], "warning");
-                            $('#no_ktp').focus
-                            return;
-                        }
-                        else {
-                            swal("Done!", "registrasi berhasil!", "success");
-                            setTimeout(
+                        swal("Done!", "It was succesfully updated!", "success");
+                        setTimeout(
                             function()
                             {
-                                window.location.href="list_anggota.html"
+                                location.reload(true);
                             }, 1500);
-                        }
                     },
                     error: function (xhr, ajaxOptions, thrownError) {
-                        swal("Error Saat registrasi!", "Please try again", "error");
+                        swal("Error!", "Please try again", "error");
                     }
                 });
             });

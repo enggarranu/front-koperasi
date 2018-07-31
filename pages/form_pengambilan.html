@@ -505,7 +505,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="page-head">
                         <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Pinjaman
+                            <h1>Pengambilan Pinjaman
                                 <small>Anggota Koperasi</small>
                             </h1>
                         </div>
@@ -600,11 +600,11 @@ License: You must have a valid license purchased only from themeforest(the above
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
-                            <a href="#">Pinjaman</a>
+                            <a href="#">pinjaman</a>
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
-                            <span class="active">Form Pinjaman</span>
+                            <span class="active">Form Pengambilan</span>
                         </li>
                     </ul>
                     <!-- END PAGE BREADCRUMB -->
@@ -613,70 +613,73 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="col-md-6 ">
                             <!-- BEGIN SAMPLE FORM PORTLET-->
                             <div class="portlet light bordered">
+                                <div class="portlet-title">
+                                    <div class="caption font-red-sunglo">
+                                        <i class="icon-bar-chart font-red"></i>
+                                        <span class="caption-subject bold uppercase"> Form Pengambilan Pinjaman Anggota Koperasi</span>
+                                    </div>
+                                </div>
                                 <div class="portlet-body form">
                                     <form role="form">
                                         <div class="form-body">
-                                            <div class="row">
-                                                <div class="form-group col-md-4">
-                                                    <label>ID Transaksi</label>
-                                                    <input type="text" class="form-control" placeholder="UTI/PMB201805190001" readonly> </div>
 
-                                                <div class="form-group col-md-8">
-                                                    <label>Tanggal Pengambilan</label>
-                                                    <div class="input-group input-medium date date-picker" data-date-format="dd-mm-yyyy" data-date-start-date="+0d">
-                                                        <input type="text" class="form-control" readonly>
-                                                        <span class="input-group-btn">
+                                            <div class="form-group">
+                                                <label>ID atau Nama Anggota</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-tags"></i>
+                                                    <input type="text" class="form-control" id="id_anggota" placeholder="Cari Bedasarkan ID Anggota / Nama Anggota" list="list_nama_anggota" onfocusout="get_data_pinjaman()">
+                                                    <datalist id="list_nama_anggota">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Tanggal Pengambilan</label>
+                                                <div class="input-group input-medium date datepicker" data-date-format="dd-mm-yyyy"
+                                                     data-date-start-date="+0d">
+                                                    <input type="text" class="form-control" readonly="" id="datetimepicker1">
+                                                    <span class="input-group-btn">
                                                             <button class="btn default" type="button">
                                                                 <i class="fa fa-calendar"></i>
                                                             </button>
                                                         </span>
-                                                    </div>
                                                 </div>
                                             </div>
 
-                                            <div class="row">
-                                                <div class="form-group col-md-4">
-                                                    <label>Nomor Anggota</label>
-                                                    <select class="form-control selectpicker" data-live-search="true" data-size="5">
-                                                        <option data-tokens="enggar">UTI/AGT123456890</option>
-                                                        <option data-tokens="ranu">0983023</option>
-                                                        <option data-tokens="satya">82829282</option>
-                                                        <option data-tokens="uti">01239812312</option>
-                                                        <option data-tokens="uti">01239812312</option>
-                                                        <option data-tokens="uti">01239812312</option>
-                                                        <option data-tokens="orang">9340239</option>
-                                                    </select>
-                                                </div>
+                                            <div class="form-group">
+                                                <label>ID Transaksi Pengambilan</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-tags"></i>
+                                                    <input type="text" class="form-control" id="id_transaksi" readonly=""></div>
+                                            </div>
 
-                                                <div class="form-group col-md-8">
-                                                    <label>Nama</label>
-                                                    <input type="text" class="form-control" placeholder="ENGGAR RANU H" readonly> </div>
+                                            <div class="form-group">
+                                                <label>ID Transaksi Peminjaman</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-tags"></i>
+                                                    <input type="text" class="form-control" id="id_transaksi_peminjaman" readonly=""></div>
+                                            </div>
 
+                                            <div class="form-group">
+                                                <label>Jumlah Pinjaman</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="jumlah_pinjaman"
+                                                           readonly=""></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label>Saldo</label>
                                                 <div class="input-icon">
-                                                    <i class="fa fa-money font-green"></i>
-                                                    <input type="text" class="form-control" placeholder="831.123.000" readonly> </div>
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="saldo"
+                                                           readonly=""></div>
                                             </div>
 
-                                            <div class="form-group">
-                                                <label>Simpanan SR</label>
-                                                <div class="input-icon">
-                                                    <i class="fa fa-money font-green"></i>
-                                                    <input type="text" class="form-control" placeholder="1.000" readonly> </div>
-                                            </div>
 
-                                            <div class="form-group">
-                                                <label>Pinjaman</label>
-                                                <div class="input-icon">
-                                                    <i class="fa fa-money font-green"></i>
-                                                    <input type="text" class="form-control" placeholder="1.000.000" readonly> </div>
-                                            </div>
                                         </div>
                                         <div class="form-actions">
-                                            <button type="submit" class="btn blue">Submit</button>
+                                            <button type="button" class="btn blue" onclick="hit_register_pinjaman()">Submit</button>
                                             <button type="button" class="btn default">Cancel</button>
                                         </div>
                                     </form>
@@ -1314,7 +1317,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:5000/get_id_transaksi_pinjaman",
+                url: "http://127.0.0.1:5000/get_id_transaksi_pengambilan_pinjaman",
                 // The key needs to match your method's input parameter (case-sensitive).
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -1399,7 +1402,7 @@ License: You must have a valid license purchased only from themeforest(the above
             alert("end validation")
         }
 
-        function hit_register_pengambilan() {
+        function hit_register_pinjaman () {
             if (!input_validation()) {
                 return;
             }
@@ -1445,6 +1448,38 @@ License: You must have a valid license purchased only from themeforest(the above
                     }
                 });
             });
+        }
+
+
+        function get_data_pinjaman () {
+            var id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
+            if (id_anggota.length > 1) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://127.0.0.1:5000/get_detail_pinjaman/"+id_anggota,
+                    // The key needs to match your method's input parameter (case-sensitive).
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(data){
+                        console.log(data);
+                        var jumlah_pinjaman = data['jumlah_pinjaman'];
+                        var saldo = data['saldo'];
+                        var id_kredit = data['id_kredit'];
+                        if (data['response'] == 'OK') {
+                            document.getElementById("id_transaksi_peminjaman").value = id_kredit;
+                            document.getElementById("saldo").value = saldo;
+                            document.getElementById("jumlah_pinjaman").value = jumlah_pinjaman;
+                        } else {
+                            swal("Uhh.. Ohh!!!", "Mohon Pilih ID Anggota / Nama Anggota", "error");
+                        }
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        swal("Uhh.. Ohh!!!", "Gagal, Mohon Cek API", "error");
+                    }
+                });
+            }
+
+
         }
     </script>
 
