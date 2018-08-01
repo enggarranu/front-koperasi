@@ -92,7 +92,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <input type="checkbox" name="remember" value="1"/> Remember me
                 <span></span>
             </label>
-            <button type="submit" class="btn green pull-right" id="login-btn"> Login</button>
+            <button type="button" class="btn green pull-right" id="login-btn"> Login</button>
         </div>
         <div class="create-account">
             <p> Don't have an account yet ?&nbsp;
@@ -458,7 +458,7 @@ License: You must have a valid license purchased only from themeforest(the above
             console.log(json_obj)
             $.ajax({
                 type: "POST",
-                url: "http://127.0.0.1:5000/register",
+                url: "http://47.74.245.145:5000/register",
                 // The key needs to match your method's input parameter (case-sensitive).
                 data: JSON.stringify(json_obj),
                 contentType: "application/json; charset=utf-8",
@@ -506,7 +506,7 @@ License: You must have a valid license purchased only from themeforest(the above
         console.log(json_obj);
         $.ajax({
             type: "POST",
-            url: "http://127.0.0.1:5000/login",
+            url: "http://47.74.245.145:5000/login",
             // The key needs to match your method's input parameter (case-sensitive).
             data: JSON.stringify(json_obj),
             contentType: "application/json; charset=utf-8",
