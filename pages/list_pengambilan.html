@@ -23,7 +23,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <head>
     <meta charset="utf-8"/>
-    <title>List Setoran</title>
+    <title>List Pinjaman</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <meta content="Preview page of Metronic Admin Theme #4 for scroller extension demos" name="description"/>
@@ -85,6 +85,7 @@ License: You must have a valid license purchased only from themeforest(the above
         <!-- END RESPONSIVE MENU TOGGLER -->
         <!-- BEGIN PAGE ACTIONS -->
         <!-- DOC: Remove "hide" class to enable the page header actions -->
+
         <!-- END PAGE ACTIONS -->
         <!-- BEGIN PAGE TOP -->
         <div class="page-top">
@@ -172,8 +173,8 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="page-head">
                 <!-- BEGIN PAGE TITLE -->
                 <div class="page-title">
-                    <h1>SETORAN
-                        <small>list setoran anggota koperasi</small>
+                    <h1>Pengambilan
+                        <small>list pengambilan anggota koperasi</small>
                     </h1>
                 </div>
                 <!-- END PAGE TITLE -->
@@ -271,7 +272,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <i class="fa fa-circle"></i>
                 </li>
                 <li>
-                    <span class="active">List Setoran</span>
+                    <span class="active">List Pengambilan</span>
                 </li>
             </ul>
             <!-- END PAGE BREADCRUMB -->
@@ -291,22 +292,21 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="portlet-title">
                             <div class="caption font-dark">
                                 <i class="icon-bar-chart font-dark"></i>
-                                <span class="caption-subject bold uppercase">Daftar Setoran Angota Koperasi</span>
+                                <span class="caption-subject bold uppercase">DAFTAR PENGAMBILAN PINJAMAN ANGGOTA KOPERASI</span>
                             </div>
                             <div class="tools"></div>
                         </div>
                         <div class="portlet-body">
-                            <table class="table table-striped table-bordered table-hover" id="isi_table1">
+                            <table class="table table-striped table-bordered table-hover order-column" id="isi_table1">
                                 <thead>
                                 <tr>
-                                    <th>ID Transaksi</th>
-                                    <th>ID Anggota</th>
+                                    <th>ID Pengambilan</th>
+                                    <th>ID Pinjaman</th>
+                                    <th>Tanggal Pengambilan</th>
+                                    <th>ID Angota</th>
                                     <th>Nama Anggota</th>
-                                    <th>Jenis Simpanan</th>
-                                    <th>Nominal</th>
-                                    <th>Saldo</th>
-                                    <th>Tanggal Transaksi</th>
-                                    <th>Diinput Oleh</th>
+                                    <th>Insert By</th>
+                                    <!--<th>Action</th>-->
                                 </tr>
                                 </thead>
                                 <!--<tbody><span id="isi_table"></span>-->
@@ -1102,7 +1102,7 @@ License: You must have a valid license purchased only from themeforest(the above
         if(sessionStorage.getItem("username") == null || sessionStorage.getItem("username") == "") {
             window.location.href = 'login.html';
         }
-        // document.getElementById("datetimepicker1").value = moment().format("YYYY-MM-DD");
+
         var display_uname = "Hello, Selamat datang " + sessionStorage.getItem("username");
         document.getElementById('username').innerHTML = display_uname;
         // document.getElementById("datetimepicker1").value = moment().format("YYYY-MM-DD");
@@ -1111,6 +1111,7 @@ License: You must have a valid license purchased only from themeforest(the above
             sessionStorage.removeItem("username");
             window.location.href = 'login.html'
         }
+        // document.getElementById("datetimepicker1").value = moment().format("YYYY-MM-DD");
 
         reload_page();
 
@@ -1123,7 +1124,7 @@ License: You must have a valid license purchased only from themeforest(the above
     var reload_page = function () {
         $.ajax({
             type: "GET",
-            url: "http://127.0.0.1:5000/inquiry_setoran",
+            url: "http://127.0.0.1:5000/inquiry_pengambilan",
             // The key needs to match your method's input parameter (case-sensitive).
             contentType: "application/json; charset=utf-8",
             dataType: "json",
@@ -1143,6 +1144,12 @@ License: You must have a valid license purchased only from themeforest(the above
                             'excel',
                             'print'
                         ]
+                        // ,
+                        // "columnDefs": [{
+                        //     "targets": -1,
+                        //     "data": null,
+                        //     "defaultContent": "<button class='btn btn-danger' data-toggle='modal' href='#basic'>Modify</button>"
+                        // }]
                     });
 
                     $('#isi_table1').on('click', 'button', function () {
@@ -1151,13 +1158,131 @@ License: You must have a valid license purchased only from themeforest(the above
                         showModal(data);
                     });
                 } else {
-                    swal("Uhh.. Ohh!!!", "Gagal Mendapatkan List Transaksi", "error");
+                    swal("Uhh.. Ohh!!!", "Gagal generate ID Anggota", "error");
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 swal("Uhh.. Ohh!!!", "Gagal generate ID Anggota, Mohon Cek API", "error");
             }
         });
+    }
+
+    function showModal(param) {
+        var header = "Ubah Data Anggota " + param[0]
+        $('#h_modal').html(header);
+        $('#datetimepicker1').val(moment().format("YYYY-MM-DD"));
+        $('#id_anggota').val(param[0]);
+        $('#nama_anggota').val(param[1]);
+    }
+
+    function btn_save() {
+        if (!input_validation()) {
+            return;
+        }
+
+        var json_obj = new Object();
+        json_obj.tanggal_modifikasi = moment().format("YYYY-MM-DD");
+        json_obj.id_anggota = $("#id_anggota").val();
+        json_obj.edit_by = sessionStorage.getItem("username");
+        json_obj.jenis_simpanan = $("#jenis_simpanan").val();
+        json_obj.nominal = $("#nominal").val();
+        console.log(json_obj);
+
+        $('#basic').modal('hide');
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Yes, Update it!",
+            closeOnConfirm: false
+        },function (isConfirm) {
+            if (!isConfirm) return;
+            $.ajax({
+                url: "http://127.0.0.1:5000/modify_pinjaman",
+                type: "POST",
+                data: JSON.stringify(json_obj),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    swal("Done!", "It was succesfully updated!", "success");
+                    setTimeout(
+                        function()
+                        {
+                            location.reload(true);
+                        }, 1500);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    swal("Error deleting!", "Please try again", "error");
+                }
+            });
+        });
+    };
+
+
+    function btn_delete() {
+        var json_obj = new Object();
+        // json_obj.tanggal_modifikasi = moment().format("YYYY-MM-DD");
+        json_obj.id_anggota = $("#id_anggota").val();
+        console.log(json_obj);
+        swal({
+            title: "Are you sure?",
+            text: "You will not be able to recover this imaginary file!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#DD6B55",
+            confirmButtonText: "Yes, delete it!",
+            closeOnConfirm: false
+        }, function (isConfirm) {
+            if (!isConfirm) return;
+            $.ajax({
+                url: "http://127.0.0.1:5000/delete_anggota",
+                type: "POST",
+                data: JSON.stringify(json_obj),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    swal("Done!", "It was succesfully deleted!", "success");
+                    setTimeout(
+                        function()
+                        {
+                            location.reload(true);
+                        }, 1500);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    swal("Error deleting!", "Please try again", "error");
+                }
+            });
+        });
+    }
+
+
+    function input_validation() {
+        if ($("#nama_anggota").val() == "") {
+            $('#warning_alert').css('display', 'block')
+            $("#nama_anggota").focus();
+            return false;
+        }
+
+        if ($("#no_ktp").val() == "") {
+            swal("Waduwh!!!", "No. KTP/SIM belum terisi", "warning");
+            $("#no_ktp").focus();
+            return false;
+        }
+
+        if ($("#alamat").val() == "") {
+            swal("Waduwh!!!", "Alamat belum terisi", "warning");
+            $("#alamat").focus();
+            return false;
+        }
+
+        if ($("#telepon").val() == "") {
+            swal("Waduwh!!!", "Telepon belum terisi", "warning");
+            $("#telepon").focus();
+            return false;
+        }
+        return true;
     }
 
 </script>

@@ -2,14 +2,305 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/form_pengambilan_bak2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/layouts/layout4/img/logo-light-bak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pages/img/logo-big.png (2).bak.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/pages/img/logo-big1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/list_pengambilan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/layout.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/blue.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/dark.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/grey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/grey.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/light.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/css/themes/light.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/ajax-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/ajax-modal-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/arrow-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar1_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar3_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/avatar9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/hor-menu-red-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/icon-color-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/icon-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/icon-img-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/icon-img-up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/inbox-nav-arrow-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/loading-spinner-blue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/loading-spinner-default.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/loading-spinner-grey.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/logo-big-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/logo-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/logo-default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/menu-toggler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/photo1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/photo2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/remove-icon-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/search_icon_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar-menu-arrow-reverse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar-menu-arrow-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar-menu-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar-toggler-inverse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar-toggler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_arrow_icon_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_arrow_icon_light_rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_inline_toggler_icon_blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_inline_toggler_icon_darkblue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_inline_toggler_icon_default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_inline_toggler_icon_grey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_inline_toggler_icon_light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_inline_toggler_icon_light2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_toggler_icon_blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_toggler_icon_darkblue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_toggler_icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_toggler_icon_grey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_toggler_icon_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/img/sidebar_toggler_icon_light2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/scripts/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/scripts/demo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/scripts/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout2/scripts/layout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/layout.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/blue-hoki.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/blue-hoki.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/blue-steel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/blue-steel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/green-haze.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/green-haze.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/purple-plum.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/purple-plum.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/purple-studio.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/purple-studio.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/red-intense.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/red-intense.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/red-sunglo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/red-sunglo.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/yellow-crusta.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/yellow-crusta.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/yellow-orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/css/themes/yellow-orange.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/ajax-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/ajax-modal-loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/avatar9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/icon-color-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/icon-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/loading-spinner-blue.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/loading-spinner-default.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/loading-spinner-grey.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-big-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-blue-hoki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-blue-steel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-default.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-green-haze.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-purple-plum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-purple-studio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-red-intense.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-red-sunglo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-yellow-crusta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo-yellow-orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/img/menu-toggler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/scripts/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/scripts/demo.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/scripts/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout3/scripts/layout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout4/img/logo-light.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/layouts/layout4/img/logo-light.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/css/custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/css/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/css/layout.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/scripts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/scripts/index.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/scripts/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout5/scripts/layout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/css/custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/css/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/css/layout.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/img/bg_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/img/close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/scripts/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/scripts/index.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/scripts/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout6/scripts/layout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/css/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/css/custom.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/css/layout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/css/layout.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/avatar1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/iphone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/m_toggler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/mac.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/img/map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/scripts/layout.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/layouts/layout7/scripts/layout.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/avatars/team9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/background/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/pages/img/logo-big.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pages/img/logo-big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/city_names.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_order_credit_memos.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_order_history.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_order_invoices.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_order_shipment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_orders.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_product_history.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_product_reviews.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/ecommerce_products.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/idletimeout_keepalive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/jstree_ajax_data.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/table_ajax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/table_tree.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/timeout-keep-alive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/typeahead_countries.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/typeahead_custom.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/typeahead_nba.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/typeahead_nhl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/username_checker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/bayar_cicilan.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/form_anggota.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_anggota.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/form_pengambilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pengambilan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_pengambilan_BAK.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_pengambilan_bak2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pinjaman.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/form_setoran.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_setoran.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/list_anggota.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_anggota.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/list_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_pinjaman.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/list_setoran.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_setoran.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page_user_lock_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page_user_lock_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pengambilan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/pinjaman.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/setoran.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sidebar-menu.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,38 +314,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="form_pengambilan.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/form_pengambilan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1344">
+              <caret line="1083" column="74" selection-start-line="1083" selection-start-column="74" selection-end-line="1083" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_pengambilan.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="117" column="47" lean-forward="true" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_pinjaman.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="93" column="94" lean-forward="true" selection-start-line="93" selection-start-column="94" selection-end-line="93" selection-end-column="94" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar-menu.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="list_anggota.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/list_anggota.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="93" column="19" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="144" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_anggota.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/form_anggota.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="968" column="13" lean-forward="true" selection-start-line="961" selection-start-column="11" selection-end-line="968" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_setoran.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/form_setoran.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="980" column="13" selection-start-line="980" selection-start-column="13" selection-end-line="980" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_setoran.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/list_setoran.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="180" column="14" selection-start-line="180" selection-start-column="14" selection-end-line="180" selection-end-column="14" />
+            <state relative-caret-position="183">
+              <caret line="119" column="122" lean-forward="true" selection-start-line="119" selection-start-column="122" selection-end-line="119" selection-end-column="122" />
             </state>
           </provider>
         </entry>
@@ -71,41 +380,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id_tr</find>
-      <find>defaults-</find>
-      <find>nama anggota</find>
-      <find>select2</find>
-      <find>select</find>
-      <find>nama</find>
-      <find>list_nam</find>
-      <find>id_anggo</find>
-      <find>datetimepicker1</find>
-      <find>table</find>
-      <find>order-col</find>
-      <find>get</find>
-      <find>sideba</find>
-      <find>pinjaman</find>
-      <find>sidebar_menu</find>
-      <find>hit_register_pinjaman</find>
-      <find>setoran</find>
       <find>Nomor an</find>
       <find>Action</find>
       <find>Pinjaman</find>
       <find>id_transaksi_pinjaman</find>
       <find>id_transaksi</find>
       <find>nick</find>
-      <find>username</find>
       <find>logout</find>
       <find>lock</find>
       <find>top</find>
-      <find>page-actions</find>
       <find>BEGIN HEADER SEARCH BOX</find>
       <find>page-top</find>
+      <find>page-ac</find>
+      <find>username</find>
+      <find>page-actions</find>
+      <find>login</find>
+      <find>list se</find>
+      <find>setoran</find>
+      <find>Metronic Admin Theme #4</find>
+      <find>Metronic Admin Theme #4 | Bootstrap Form Controls</find>
+      <find>Metronic Admin Theme #4 | Scroller Extension</find>
+      <find>&lt;title&gt;Metronic Admin Theme #4</find>
+      <find>index.html</find>
+      <find>rugi</find>
+      <find>background</find>
+      <find>&lt;h3&gt;</find>
+      <find>page_general_search</find>
+      <find>id pin</find>
+      <find>register_pinjaman</find>
+      <find>layout</find>
+      <find>layout3</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
       <replace>./theme</replace>
+      <replace>Koperasi Sejahtrea | Usra Tampi Indonesia</replace>
+      <replace />
+      <replace>list_anggota.html</replace>
+      <replace>Sejahtera | KS-UTI</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir>D:\xampp\htdocs\koperasi\pages</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -140,15 +456,16 @@
         <option value="$PROJECT_DIR$/assets/pages/scripts/login-4.min.js" />
         <option value="$PROJECT_DIR$/pages/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/pages/login.html" />
-        <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
-        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
-        <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
-        <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/list_anggota.html" />
         <option value="$PROJECT_DIR$/pages/form_anggota.html" />
         <option value="$PROJECT_DIR$/pages/form_setoran.html" />
         <option value="$PROJECT_DIR$/pages/list_setoran.html" />
+        <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
+        <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
+        <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
+        <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
+        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
+        <option value="$PROJECT_DIR$/pages/login.html" />
       </list>
     </option>
   </component>
@@ -165,9 +482,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="975" />
-    <option name="height" value="1055" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -189,6 +506,24 @@
             <path>
               <item name="koperasi" type="b2602c69:ProjectViewProjectNode" />
               <item name="koperasi" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koperasi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koperasi" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koperasi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koperasi" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="koperasi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="koperasi" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -201,21 +536,21 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../koperasi-backup" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="D:\xampp\htdocs\koperasi\node_modules\eslint" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\koperasi\main\pages" />
-      <recent name="D:\xampp\htdocs\koperasi\include" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\koperasi\pages" />
       <recent name="D:\xampp\htdocs\koperasi\main\pages" />
       <recent name="D:\xampp\htdocs\koperasi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\koperasi\main\pages" />
+      <recent name="D:\xampp\htdocs\koperasi\include" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -269,7 +604,7 @@
       <workItem from="1531645332399" duration="2569000" />
       <workItem from="1532074381752" duration="1574000" />
       <workItem from="1532677453153" duration="6135000" />
-      <workItem from="1533008050861" duration="5727000" />
+      <workItem from="1533008050861" duration="15219000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -285,20 +620,27 @@
       <option name="project" value="LOCAL" />
       <updated>1532677597222</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix header">
+      <created>1533022609911</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1533022609911</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150437000" />
+    <option name="totallyTimeSpent" value="159929000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31684875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14951122" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32979977" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -312,28 +654,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31724137" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -346,7 +667,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix fingsi pinjaman" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix fingsi pinjaman" />
+    <MESSAGE value="Fix header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix header" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -354,10 +676,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main/assets/global/plugins/bootstrap-sweetalert/sweetalert.css" />
-    <entry file="file://$PROJECT_DIR$/main/assets/pages/css/login-4.min.css" />
-    <entry file="file://$PROJECT_DIR$/main/assets/global/plugins/bootstrap-sweetalert/sweetalert.js" />
-    <entry file="file://$PROJECT_DIR$/main/pages/ui_general.html" />
     <entry file="file://$PROJECT_DIR$/main/assets/pages/img/logo-big.png" />
     <entry file="file://$PROJECT_DIR$/main/pages/ui_sweetalert.html" />
     <entry file="file://$PROJECT_DIR$/main/assets/pages/scripts/md5.js" />
@@ -481,27 +799,6 @@
     <entry file="file://$PROJECT_DIR$/assets/global/plugins/select2/js/select2.full.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="424" column="12" selection-start-line="424" selection-end-line="427" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22672">
-          <caret line="1417" column="36" selection-start-line="1417" selection-start-column="21" selection-end-line="1417" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1456">
-          <caret line="91" column="53" selection-start-line="91" selection-start-column="53" selection-end-line="91" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_pengambilan_BAK.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27760">
@@ -516,13 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/form_pengambilan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="1432" column="67" lean-forward="true" selection-start-line="1432" selection-start-column="67" selection-end-line="1432" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/pengambilan.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -530,17 +820,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="1497" column="42" lean-forward="true" selection-start-line="1497" selection-start-column="42" selection-end-line="1497" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_anggota.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="968" column="13" lean-forward="true" selection-start-line="961" selection-start-column="11" selection-end-line="968" selection-end-column="13" />
+        <state relative-caret-position="742">
+          <caret line="1050" column="46" selection-start-line="1050" selection-start-column="46" selection-end-line="1050" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -551,17 +834,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_anggota.html">
+    <entry file="file://$PROJECT_DIR$/pages/list_setoran.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="93" column="19" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="144" selection-end-column="14" />
+        <state relative-caret-position="168">
+          <caret line="1112" column="9" selection-start-line="1112" selection-start-column="9" selection-end-line="1112" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_setoran.html">
+    <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="180" column="14" selection-start-line="180" selection-start-column="14" selection-end-line="180" selection-end-column="14" />
+        <state relative-caret-position="608">
+          <caret line="995" selection-start-line="995" selection-end-line="995" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form_pengambilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1344">
+          <caret line="1083" column="74" selection-start-line="1083" selection-start-column="74" selection-end-line="1083" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_anggota.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="119" column="122" lean-forward="true" selection-start-line="119" selection-start-column="122" selection-end-line="119" selection-end-column="122" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/setoran.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="247" column="84" selection-start-line="247" selection-start-column="84" selection-end-line="247" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="93" column="94" lean-forward="true" selection-start-line="93" selection-start-column="94" selection-end-line="93" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/bayar_cicilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="258" column="84" selection-start-line="258" selection-start-column="84" selection-end-line="258" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="243" column="84" selection-start-line="243" selection-start-column="84" selection-end-line="243" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="117" column="47" lean-forward="true" selection-start-line="117" selection-start-column="47" selection-end-line="117" selection-end-column="47" />
         </state>
       </provider>
     </entry>
