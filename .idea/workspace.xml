@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_pengambilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pengambilan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pinjaman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_setoran.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_setoran.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/list_pengambilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_pengambilan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_pinjaman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list_setoran.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_setoran.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_pengambilan.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list_pengambilan.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="950" column="6" selection-start-line="950" selection-start-column="6" selection-end-line="950" selection-end-column="6" />
+            <state relative-caret-position="386">
+              <caret line="307" column="55" selection-start-line="307" selection-start-column="55" selection-end-line="307" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -67,11 +62,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form_pinjaman.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form_pinjaman.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="329" column="77" selection-start-line="329" selection-start-column="77" selection-end-line="329" selection-end-column="77" />
+            <state relative-caret-position="178">
+              <caret line="1060" column="148" selection-start-line="1060" selection-start-column="69" selection-end-line="1060" selection-end-column="148" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -79,17 +83,8 @@
       <file leaf-file-name="form_anggota.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_anggota.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="1066" column="57" selection-start-line="1066" selection-start-column="52" selection-end-line="1066" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar-menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1312">
-              <caret line="82" column="66" selection-start-line="82" selection-start-column="66" selection-end-line="82" selection-end-column="66" />
+            <state relative-caret-position="530">
+              <caret line="328" column="71" selection-start-line="328" selection-start-column="71" selection-end-line="328" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -124,9 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setoran</find>
-      <find>Metronic Admin Theme #4</find>
-      <find>Metronic Admin Theme #4 | Bootstrap Form Controls</find>
       <find>Metronic Admin Theme #4 | Scroller Extension</find>
       <find>&lt;title&gt;Metronic Admin Theme #4</find>
       <find>index.html</find>
@@ -154,6 +146,9 @@
       <find>regis</find>
       <find>register</find>
       <find>bunga</find>
+      <find>ktp</find>
+      <find>cicilan</find>
+      <find>isi_table</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
@@ -202,15 +197,15 @@
         <option value="$PROJECT_DIR$/pages/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pages/list_anggota.html" />
-        <option value="$PROJECT_DIR$/pages/form_anggota.html" />
         <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
         <option value="$PROJECT_DIR$/pages/login.html" />
-        <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/list_setoran.html" />
         <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
         <option value="$PROJECT_DIR$/pages/form_setoran.html" />
         <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
+        <option value="$PROJECT_DIR$/pages/form_anggota.html" />
+        <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
       </list>
     </option>
   </component>
@@ -332,7 +327,7 @@
       <workItem from="1532074381752" duration="1574000" />
       <workItem from="1532677453153" duration="6135000" />
       <workItem from="1533008050861" duration="20304000" />
-      <workItem from="1533185489710" duration="6051000" />
+      <workItem from="1533185489710" duration="8194000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -369,14 +364,29 @@
       <option name="project" value="LOCAL" />
       <updated>1533127266222</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix Bug">
+      <created>1533196880132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1533196880133</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fix Bug">
+      <created>1533198380287</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1533198380287</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171065000" />
+    <option name="totallyTimeSpent" value="173208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14951122" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -412,7 +422,8 @@
     <MESSAGE value="Fix header" />
     <MESSAGE value="Fix header and add menu" />
     <MESSAGE value="Change Hit URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change Hit URL" />
+    <MESSAGE value="Fix Bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -519,13 +530,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.html" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -568,13 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="950" column="6" selection-start-line="950" selection-start-column="6" selection-end-line="950" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/list_setoran.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
@@ -586,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="986" column="22" selection-start-line="986" selection-start-column="22" selection-end-line="986" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/form_anggota.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="1066" column="57" selection-start-line="1066" selection-start-column="52" selection-end-line="1066" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -610,10 +600,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form_anggota.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="328" column="71" selection-start-line="328" selection-start-column="71" selection-end-line="328" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="329" column="77" selection-start-line="329" selection-start-column="77" selection-end-line="329" selection-end-column="77" />
+        <state relative-caret-position="178">
+          <caret line="1060" column="148" selection-start-line="1060" selection-start-column="69" selection-end-line="1060" selection-end-column="148" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="307" column="55" selection-start-line="307" selection-start-column="55" selection-end-line="307" selection-end-column="55" />
         </state>
       </provider>
     </entry>
