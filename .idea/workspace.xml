@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/form_petugas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sidebar-menu.html" afterDir="false" />
     </list>
@@ -18,11 +17,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="form_petugas.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form_petugas.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_petugas.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="360" column="83" selection-start-line="360" selection-start-column="83" selection-end-line="360" selection-end-column="83" />
+            <state relative-caret-position="502">
+              <caret line="365" column="34" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
+              <folding>
+                <element signature="e#64106#64112#0" expanded="true" />
+                <element signature="e#64210#64216#0" expanded="true" />
+                <element signature="e#64217#64223#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sidebar-menu.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="111" column="42" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -30,8 +43,8 @@
       <file leaf-file-name="form_setoran.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_setoran.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="326" column="50" lean-forward="true" selection-start-line="318" selection-start-column="44" selection-end-line="326" selection-end-column="50" />
+            <state relative-caret-position="5216">
+              <caret line="326" column="50" selection-start-line="318" selection-start-column="44" selection-end-line="326" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -133,9 +146,9 @@
         <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
         <option value="$PROJECT_DIR$/pages/form_anggota.html" />
         <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
-        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
         <option value="$PROJECT_DIR$/pages/login.html" />
         <option value="$PROJECT_DIR$/pages/form_petugas.html" />
+        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
       </list>
     </option>
   </component>
@@ -152,9 +165,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="975" />
-    <option name="height" value="1055" />
+    <option name="x" value="-9" />
+    <option name="width" value="977" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -257,7 +270,8 @@
       <workItem from="1532074381752" duration="1574000" />
       <workItem from="1532677453153" duration="6135000" />
       <workItem from="1533008050861" duration="20304000" />
-      <workItem from="1533185489710" duration="11833000" />
+      <workItem from="1533185489710" duration="11947000" />
+      <workItem from="1533205963192" duration="56000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -315,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533199434921</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add menu sidebar and add form petugas">
+      <created>1533205818982</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1533205818982</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176847000" />
+    <option name="totallyTimeSpent" value="177017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
@@ -329,7 +350,6 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -343,6 +363,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +382,8 @@
     <MESSAGE value="Change Hit URL" />
     <MESSAGE value="Fix Bug" />
     <MESSAGE value="Jumlah Pinjaman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jumlah Pinjaman" />
+    <MESSAGE value="add menu sidebar and add form petugas" />
+    <option name="LAST_COMMIT_MESSAGE" value="add menu sidebar and add form petugas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -544,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="119" column="49" selection-start-line="119" selection-start-column="49" selection-end-line="119" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -560,15 +575,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_setoran.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="326" column="50" lean-forward="true" selection-start-line="318" selection-start-column="44" selection-end-line="326" selection-end-column="50" />
+        <state relative-caret-position="5216">
+          <caret line="326" column="50" selection-start-line="318" selection-start-column="44" selection-end-line="326" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_petugas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="360" column="83" selection-start-line="360" selection-start-column="83" selection-end-line="360" selection-end-column="83" />
+        <state relative-caret-position="502">
+          <caret line="365" column="34" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
+          <folding>
+            <element signature="e#64106#64112#0" expanded="true" />
+            <element signature="e#64210#64216#0" expanded="true" />
+            <element signature="e#64217#64223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="111" column="42" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
         </state>
       </provider>
     </entry>
