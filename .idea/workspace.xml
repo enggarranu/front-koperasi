@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_petugas.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_petugas.html" afterDir="false" />
-    </list>
+    <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -264,7 +261,7 @@
       <workItem from="1533008050861" duration="20304000" />
       <workItem from="1533185489710" duration="11947000" />
       <workItem from="1533205963192" duration="254000" />
-      <workItem from="1533300761077" duration="2059000" />
+      <workItem from="1533300761077" duration="2349000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -343,11 +340,18 @@
       <option name="project" value="LOCAL" />
       <updated>1533206194430</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Improve Register Petugas">
+      <created>1533302851545</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1533302851546</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179274000" />
+    <option name="totallyTimeSpent" value="179564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
@@ -389,7 +393,8 @@
     <MESSAGE value="Fix Bug" />
     <MESSAGE value="Jumlah Pinjaman" />
     <MESSAGE value="add menu sidebar and add form petugas" />
-    <option name="LAST_COMMIT_MESSAGE" value="add menu sidebar and add form petugas" />
+    <MESSAGE value="Improve Register Petugas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improve Register Petugas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
