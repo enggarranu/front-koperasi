@@ -326,7 +326,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <label>Username</label>
                                                 <div class="input-icon">
                                                     <i class="fa fa-user"></i>
-                                                    <input type="text" class="form-control" placeholder="username" id="username"required> </div>
+                                                    <input type="text" class="form-control" placeholder="username" id="username_register"required> </div>
                                             </div>
 
                                             <div class="form-group">
@@ -345,7 +345,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                             <div class="form-group">
                                                 <label>Role</label>
-                                                <select class="form-control" id="jenis_simpanan">
+                                                <select class="form-control" id="jenis_role">
                                                     <option value="0">Pilih Role...</option>
                                                     <option value="admin">Admin</option>
                                                     <option value="user">User</option>
@@ -357,8 +357,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                         </div>
                                         <div class="form-actions">
-                                            <!--<button type="button" class="btn blue" onclick="hit_register_anggota()">Submit</button>-->
-                                            <button type="button" class="btn blue" >Submit</button>
+                                            <button type="button" class="btn blue" onclick="hit_register_petugas()">Submit</button>
+                                            <!--<button type="button" class="btn blue" >Submit</button>-->
                                             <button type="button" class="btn default">Cancel</button>
                                         </div>
                                     </form>
@@ -1008,21 +1008,21 @@ License: You must have a valid license purchased only from themeforest(the above
                     var response = data['response'];
                     console.log(msg);
                     if (data['response'] == 'OK') {
-                       document.getElementById("id_anggota").value = msg;
+                       document.getElementById("id_petugas").value = msg;
                        // document.getElementById("nama_anggota").value= msg;
                     } else {
-                        swal("Uhh.. Ohh!!!", "Gagal generate ID Anggota", "error");
+                        swal("Uhh.. Ohh!!!", "Gagal generate ID Petugas", "error");
                     }
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    swal("Uhh.. Ohh!!!", "Gagal generate ID Anggota, Mohon Cek API", "error");
+                    swal("Uhh.. Ohh!!!", "Gagal generate ID Petugas, Mohon Cek API", "error");
                 }
             });
             document.getElementById("datetimepicker1").value = get_current_date();
 
             $(".form-group").keypress(function (e) {
                 if (e.which == '13') {
-                    hit_register_anggota();
+                    hit_register_petugas();
                 }
             });
 
@@ -1039,15 +1039,15 @@ License: You must have a valid license purchased only from themeforest(the above
         }
 
         function input_validation(){
-            if ($("#nama_anggota").val() == ""){
-                swal("Waduwh!!!", "Nama anggota belum terisi", "warning");
-                $("#nama_anggota").focus();
+            if ($("#nama_petugas").val() == ""){
+                swal("Waduwh!!!", "Nama Petugas belum terisi", "warning");
+                $("#nama_petugas").focus();
                 return false;
             }
 
-            if ($("#no_ktp").val() == ""){
-                swal("Waduwh!!!", "No. KTP/SIM belum terisi", "warning");
-                $("#no_ktp").focus();
+            if ($("#email").val() == ""){
+                swal("Waduwh!!!", "format email tidak benar", "warning");
+                $("#email").focus();
                 return false;
             }
 
@@ -1057,67 +1057,79 @@ License: You must have a valid license purchased only from themeforest(the above
                 return false;
             }
 
-            if ($("#telepon").val() == ""){
-                swal("Waduwh!!!", "Telepon belum terisi", "warning");
-                $("#telepon").focus();
+            if ($("#jenis_role").val() == "0"){
+                document.getElementById("jenis_role").style.borderColor = "#E34234";
+                swal("Waduwh!!!", "Role belum dipilih", "warning");
+                $("#jenis_role").focus();
                 return false;
+            }
+
+            if (!password_check()) {
+                swal("Waduwh!!!", "Password dan konfirmasi password tidak sama", "warning");
+                return false
             }
             return true;
 
             alert("end validation")
         }
 
-        function hit_register_anggota () {
+        function password_check() {
+            var pass1 = document.getElementById("password").value;
+            var pass2 = document.getElementById("rpassword").value;
+            var ok = true;
+            if (pass1 != pass2) {
+                //alert("Passwords Do not match");
+                document.getElementById("password").style.borderColor = "#E34234";
+                document.getElementById("rpassword").style.borderColor = "#E34234";
+                return false;
+            }
+            else {
+                return true
+            }
+        }
+
+        function hit_register_petugas () {
             if (!input_validation()) {
                 return;
-            }
-            // alert("tembak belakang")
-            var json_obj = new Object();
-            json_obj.tanggal_registrasi = get_current_date();
-            json_obj.id_anggota = $("#id_anggota").val();
-            json_obj.nama_anggota = $("#nama_anggota").val();
-            json_obj.ktp = $("#no_ktp").val();
-            json_obj.alamat = $("#alamat").val();
-            json_obj.telepon = $("#telepon").val();
-            json_obj.insert_by = sessionStorage.getItem("username")
-            console.log(json_obj);
-            swal({
-                title: "Yakin data sudah benar?",
-                text: "You will not be able to recover this imaginary file!",
-                type: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Yes, data sudah benar!",
-                closeOnConfirm: false
-            }, function (isConfirm) {
-                if (!isConfirm) return;
+            } else {
+                if ($("#username_register").val() == "" || $("#password").val() == "" || $("#nama_petugas").val() == "")  {
+                    swal("Uhh.. Ohh!!!", "Mohon Lengkapi Form dengan benar", "warning");
+                    return;
+                }
+                var json_obj = new Object();
+                json_obj.fullname = $("#nama_petugas").val()
+                json_obj.email = $("#email").val()
+                json_obj.address = $("#alamat").val()
+                json_obj.username = $("#username_register").val()
+                json_obj.password = $("#password").val()
+                json_obj.jenis_role = $("#jenis_role").val()
+                json_obj.registered_by = sessionStorage.getItem("username")
+                console.log(json_obj)
                 $.ajax({
-                    url: "http://47.74.245.145:5000/register_anggota",
                     type: "POST",
+                    url: "http://47.74.245.145:5000/register_petugas",
+                    // The key needs to match your method's input parameter (case-sensitive).
                     data: JSON.stringify(json_obj),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
-                    success: function (data) {
+                    success: function(data){
                         console.log(data);
-                        if (data['response'] == 'NOK') {
-                            swal("Error!", data['msg'], "warning");
-                            $('#no_ktp').focus
-                            return;
-                        }
-                        else {
-                            swal("Done!", "registrasi berhasil!", "success");
-                            setTimeout(
-                            function()
-                            {
-                                window.location.href="list_anggota.html"
-                            }, 1500);
+                        var msg = data['msg'];
+                        if (data['response'] == 'OK') {
+                            swal("Good job!", "Registrasi Berhasil", "success");
+                            $( "#register-back-btn" ).trigger( "click" );
+
+                        } else {
+                            swal("Uhh.. Ohh!!!", msg, "error");
                         }
                     },
-                    error: function (xhr, ajaxOptions, thrownError) {
-                        swal("Error Saat registrasi!", "Please try again", "error");
+                    failure: function(errMsg) {
+                        console.log(errMsg);
+
                     }
                 });
-            });
+            }
+
         }
     </script>
 
