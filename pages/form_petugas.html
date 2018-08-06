@@ -1118,7 +1118,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         if (data['response'] == 'OK') {
                             swal("Good job!", "Registrasi Berhasil", "success");
                             $( "#register-back-btn" ).trigger( "click" );
-
+                            window.location.href = 'login_management.html';
                         } else {
                             swal("Uhh.. Ohh!!!", msg, "error");
                         }
