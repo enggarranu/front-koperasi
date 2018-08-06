@@ -518,6 +518,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     swal("Good job!", "Sukses Login", "success");
                     sessionStorage.setItem("username",json_obj.username);
                     sessionStorage.setItem("fullname",data['fullname']);
+                    sessionStorage.setItem("jenis_role",data['jenis_role']);
                     window.location ="list_anggota.html";
                 } else {
                     swal("Uhh.. Ohh!!!", msg, "error");
