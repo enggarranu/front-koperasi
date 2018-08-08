@@ -1104,6 +1104,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 json_obj.password = $("#password").val()
                 json_obj.jenis_role = $("#jenis_role").val()
                 json_obj.registered_by = sessionStorage.getItem("username")
+                json_obj.id_petugas = sessionStorage.getItem("id_petugas")
                 console.log(json_obj)
                 $.ajax({
                     type: "POST",
