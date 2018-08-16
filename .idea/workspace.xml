@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_petugas.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_petugas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pinjaman.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list_anggota.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_anggota.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sidebar-menu.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,20 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="form_pinjaman.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
+      <file leaf-file-name="form_bayar_cicilan.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="1118" column="51" selection-start-line="1118" selection-start-column="51" selection-end-line="1118" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_petugas.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/form_petugas.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="1106" column="72" selection-start-line="1106" selection-start-column="72" selection-end-line="1106" selection-end-column="72" />
+            <state relative-caret-position="280">
+              <caret line="291" column="195" selection-start-line="291" selection-start-column="195" selection-end-line="291" selection-end-column="195" />
             </state>
           </provider>
         </entry>
@@ -47,17 +42,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>regis</find>
-      <find>bunga</find>
-      <find>ktp</find>
-      <find>cicilan</find>
-      <find>isi_table</find>
-      <find>anggota</find>
-      <find>jenis simpanan</find>
-      <find>hit_register_an</find>
-      <find>1</find>
-      <find>Anggota</find>
-      <find>role</find>
       <find>jenis_simpanan</find>
       <find>jenis_role</find>
       <find>mohon lengkapi form</find>
@@ -77,6 +61,17 @@
       <find>$(&quot;#sidebar_menu&quot;).load(&quot;./sidebar-menu.html&quot;);</find>
       <find>(&quot;jenis_role&quot;) == admin</find>
       <find>(&quot;jenis_role&quot;) == &quot;admin&quot;</find>
+      <find>table</find>
+      <find>id_petugas</find>
+      <find>no_ktp</find>
+      <find>nama_anggota</find>
+      <find>alamat</find>
+      <find>don't</find>
+      <find>telepon</find>
+      <find>Pengambilan Pinjaman</find>
+      <find>list_nama_anggota</find>
+      <find>id_transaksi</find>
+      <find>nama angg</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
@@ -127,19 +122,20 @@
         <option value="$PROJECT_DIR$/assets/pages/scripts/login-4.min.js" />
         <option value="$PROJECT_DIR$/pages/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/pages/list_anggota.html" />
         <option value="$PROJECT_DIR$/pages/list_setoran.html" />
         <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
         <option value="$PROJECT_DIR$/pages/form_setoran.html" />
         <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
-        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
-        <option value="$PROJECT_DIR$/pages/login_management.html" />
-        <option value="$PROJECT_DIR$/pages/login.html" />
         <option value="$PROJECT_DIR$/pages/form_anggota.html" />
         <option value="$PROJECT_DIR$/pages/sidebar-menu-user.html" />
-        <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
         <option value="$PROJECT_DIR$/pages/form_petugas.html" />
+        <option value="$PROJECT_DIR$/pages/login_management.html" />
+        <option value="$PROJECT_DIR$/pages/list_anggota.html" />
+        <option value="$PROJECT_DIR$/pages/login.html" />
+        <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
+        <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
+        <option value="$PROJECT_DIR$/pages/form_bayar_cicilan.html" />
       </list>
     </option>
   </component>
@@ -156,16 +152,15 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="977" />
-    <option name="height" value="1056" />
+    <option name="x" value="949" />
+    <option name="width" value="979" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,6 +182,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,14 +195,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\koperasi\main\pages" />
-      <recent name="D:\xampp\htdocs\koperasi\include" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\koperasi\pages" />
       <recent name="D:\xampp\htdocs\koperasi\main\pages" />
       <recent name="D:\xampp\htdocs\koperasi" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\koperasi\main\pages" />
+      <recent name="D:\xampp\htdocs\koperasi\include" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -266,7 +262,10 @@
       <workItem from="1533300761077" duration="7549000" />
       <workItem from="1533536897223" duration="5399000" />
       <workItem from="1533627184424" duration="1685000" />
-      <workItem from="1533711689173" duration="39000" />
+      <workItem from="1533711689173" duration="2467000" />
+      <workItem from="1533953442495" duration="2432000" />
+      <workItem from="1534042373742" duration="1321000" />
+      <workItem from="1534392466387" duration="2531000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -380,24 +379,38 @@
       <option name="project" value="LOCAL" />
       <updated>1533544567757</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Add login Management Page">
+      <created>1533712067262</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1533712067262</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add login Management Page">
+      <created>1533713144793</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1533713144793</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191887000" />
+    <option name="totallyTimeSpent" value="200599000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1753" height="962" extended-state="6" />
+    <frame x="-8" y="-8" width="1618" height="887" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14951122" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2991239" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -405,11 +418,32 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2991239" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="8" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -549,7 +583,6 @@
     <entry file="file://$PROJECT_DIR$/pages/pengambilan.html" />
     <entry file="file://$PROJECT_DIR$/pages/setoran.html" />
     <entry file="file://$PROJECT_DIR$/pages/bayar_cicilan.html" />
-    <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html" />
     <entry file="file://$PROJECT_DIR$/additional/New Text Document.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1248" />
@@ -597,38 +630,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_anggota.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="89" column="30" lean-forward="true" selection-end-line="1285" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login_management.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19440">
-          <caret line="1215" column="27" selection-start-line="1215" selection-start-column="27" selection-end-line="1215" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1888">
-          <caret line="118" column="46" selection-start-line="118" selection-start-column="46" selection-end-line="118" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_anggota.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="55" column="88" selection-start-line="55" selection-start-column="88" selection-end-line="55" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8256">
-          <caret line="516" column="24" selection-start-line="516" selection-start-column="20" selection-end-line="516" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -641,15 +646,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_pinjaman.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="1118" column="51" selection-start-line="1118" selection-start-column="51" selection-end-line="1118" selection-end-column="51" />
+        <state relative-caret-position="204">
+          <caret line="1088" column="33" selection-start-line="1088" selection-start-column="17" selection-end-line="1088" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/sidebar-menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="99" column="9" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="95" column="63" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_anggota.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="297" column="50" selection-start-line="297" selection-start-column="50" selection-end-line="297" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login_management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="985" column="49" selection-start-line="985" selection-start-column="49" selection-end-line="985" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_petugas.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="95">
           <caret line="1106" column="72" selection-start-line="1106" selection-start-column="72" selection-end-line="1106" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="291" column="195" selection-start-line="291" selection-start-column="195" selection-end-line="291" selection-end-column="195" />
         </state>
       </provider>
     </entry>

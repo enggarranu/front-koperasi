@@ -80,7 +80,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!-- END RESPONSIVE MENU TOGGLER -->
                 <!-- BEGIN PAGE ACTIONS -->
                 <!-- DOC: Remove "hide" class to enable the page header actions -->
-
                 <!-- END PAGE ACTIONS -->
                 <!-- BEGIN PAGE TOP -->
                 <div class="page-top">
@@ -168,7 +167,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="page-head">
                         <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Pinjaman
+                            <h1>Bayar Cicilan
                                 <small>Anggota Koperasi</small>
                             </h1>
                         </div>
@@ -263,11 +262,11 @@ License: You must have a valid license purchased only from themeforest(the above
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
-                            <a href="#">Pinjaman</a>
+                            <a href="#">pinjaman</a>
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
-                            <span class="active">Form Pinjaman</span>
+                            <span class="active">Form Bayar Cicilan</span>
                         </li>
                     </ul>
                     <!-- END PAGE BREADCRUMB -->
@@ -279,7 +278,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="portlet-title">
                                     <div class="caption font-red-sunglo">
                                         <i class="icon-bar-chart font-red"></i>
-                                        <span class="caption-subject bold uppercase"> Form Pinjaman Anggota Koperasi</span>
+                                        <span class="caption-subject bold uppercase"> Form Bayar Cicilan Anggota Koperasi</span>
                                     </div>
                                 </div>
                                 <div class="portlet-body form">
@@ -287,17 +286,17 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="form-body">
 
                                             <div class="form-group">
-                                                <label>ID atau Nama Anggota</label>
+                                                <label>ID Anggota / Nama Anggota / ID Peminjaman / ID Pengambilan</label>
                                                 <div class="input-icon">
                                                     <i class="fa fa-tags"></i>
-                                                    <input type="text" class="form-control" id="id_anggota" placeholder="Cari Bedasarkan ID Anggota / Nama Anggota" list="list_nama_anggota">
+                                                    <input type="text" class="form-control" id="id_anggota" placeholder="Cari Bedasarkan ID Anggota / Nama Anggota / ID Peminjaman / ID Pengambilan" list="list_nama_anggota" onfocusout="get_data_pinjaman()">
                                                     <datalist id="list_nama_anggota">
                                                     </datalist>
                                                 </div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label>Tanggal Pinjaman</label>
+                                                <label>Tanggal Pembayaran</label>
                                                 <div class="input-group input-medium date datepicker" data-date-format="dd-mm-yyyy"
                                                      data-date-start-date="+0d">
                                                     <input type="text" class="form-control" readonly="" id="datetimepicker1">
@@ -309,47 +308,65 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
 
+
                                             <div class="form-group">
-                                                <label>ID Transaksi</label>
+                                                <label>ID Transaksi Pembayaran</label>
                                                 <div class="input-icon">
                                                     <i class="fa fa-tags"></i>
-                                                    <input type="text" class="form-control" id="id_transaksi" readonly=""></div>
+                                                    <input type="text" class="form-control" id="id_pembayaran" readonly=""></div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <label>ID Pinjaman</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-tags"></i>
+                                                    <input type="text" class="form-control" id="id_pinjaman" readonly=""></div>
                                             </div>
 
                                             <div class="form-group">
                                                 <label>Jumlah Pinjaman</label>
                                                 <div class="input-icon">
                                                     <i class="fa fa-money"></i>
-                                                    <input type="number" class="form-control" placeholder="nominal" id="jumlah_pinjaman" min="1"
-                                                           required=""></div>
+                                                    <input type="text" class="form-control" id="jumlah_pinjaman" readonly=""></div>
                                             </div>
 
                                             <div class="form-group">
-                                                <label>Bunga Pinjaman (%) Per Tahun</label>
-                                                <div class="input-icon">
-                                                    <i class="fa fa-pie-chart"></i>
-                                                    <input type="number" pattern="\d*" class="form-control" placeholder="nominal" id="bunga_pertahun" min="0" max="100" maxlength="3"
-                                                           readonly="" value="5"></div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Lama Cicilan (bulan)</label>
-                                                <div class="input-icon">
-                                                    <i class="fa fa-calendar"></i>
-                                                    <input type="number" class="form-control" placeholder="bulan" id="tenor" min="1" max="12" maxlength="2" onfocusout="calculate_angsuran()"
-                                                           required=""></div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label>Angsuran per Bulan</label>
+                                                <label>Denda</label>
                                                 <div class="input-icon">
                                                     <i class="fa fa-money"></i>
-                                                    <input type="number" class="form-control" placeholder="nominal" id="angsuran_perbulan" readonly=""
-                                                           required=""></div>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="denda"
+                                                           readonly=""></div>
                                             </div>
+
+                                            <div class="form-group">
+                                                <label>Tanggal Tempo Pembayaran</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-calendar-times-o"></i>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="tanggal_tempo_pembayaran"
+                                                           readonly=""></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Jumlah Pembayaran</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="jumlah_pembayaran"
+                                                           readonly=""></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Sisa Pinjaman</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="sisa_pinjaman"
+                                                           readonly=""></div>
+                                            </div>
+
+
                                         </div>
                                         <div class="form-actions">
-                                            <button type="button" class="btn blue" onclick="hit_register_pinjaman()">Submit</button>
+                                            <button type="button" class="btn blue" onclick="hit_register_pengambilan()">Submit</button>
                                             <button type="button" class="btn default">Cancel</button>
                                         </div>
                                     </form>
@@ -989,10 +1006,14 @@ License: You must have a valid license purchased only from themeforest(the above
             document.getElementById('username').innerHTML = display_uname;
             // document.getElementById("datetimepicker1").value = moment().format("YYYY-MM-DD");
 
+            function logout() {
+                sessionStorage.removeItem("username");
+                window.location.href = 'login.html'
+            }
 
             $.ajax({
                 type: "GET",
-                url: "http://47.74.245.145:5000/get_id_transaksi_pinjaman",
+                url: "http://47.74.245.145:5000/get_id_transaksi_pembayaran",
                 // The key needs to match your method's input parameter (case-sensitive).
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -1002,16 +1023,16 @@ License: You must have a valid license purchased only from themeforest(the above
                     var response = data['response'];
                     console.log(msg);
                     if (data['response'] == 'OK') {
-                       document.getElementById("id_transaksi").value = msg;
+                       document.getElementById("id_pembayaran").value = msg;
                        // document.getElementById("nama_anggota").value= msg;
 
                         var options = '';
                         var list_anggota = data['anggota_arr'];
                         console.log(list_anggota);
                         for (var i = 0; i < list_anggota.length; i++){
-                            var o_value = list_anggota[i][0]+" | "+ list_anggota[i][1];
-                            options += '<option value="'+o_value+'">'+o_value+'</option>';
+                            var o_value = list_anggota[i][0]+" | "+ list_anggota[i][1]+" | "+ list_anggota[i][2]+" | "+ list_anggota[i][3];
                             console.log(o_value);
+                            options += '<option value="'+o_value+'">'+o_value+'</option>';
                         }
                         document.getElementById('list_nama_anggota').innerHTML = options;
 
@@ -1032,7 +1053,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
             $(".form-group").keypress(function (e) {
                 if (e.which == '13') {
-                    hit_register_pinjaman();
+                    hit_register_pengambilan();
                 }
             });
 
@@ -1048,90 +1069,109 @@ License: You must have a valid license purchased only from themeforest(the above
             return yyyy_MM_dd;
         }
 
-        function logout() {
-            sessionStorage.removeItem("username");
-            window.location.href = 'login.html'
-        }
-
-        function calculate_angsuran() {
-            var jumlah_pinjaman = $("#jumlah_pinjaman").val();
-            var bunga_pertahun = $("#bunga_pertahun").val();
-            var tenor = $("#tenor").val();
-            if (input_validation()){
-                document.getElementById("angsuran_perbulan").value = Math.ceil((jumlah_pinjaman * bunga_pertahun / 100) + (jumlah_pinjaman / tenor))
-            }
-        }
-
         function input_validation(){
-
-            if (jumlah_pinjaman == "" || jumlah_pinjaman == "0" || jumlah_pinjaman == null || /^([a-zA-Z])$/.test(jumlah_pinjaman)){
-                swal("Waduwh!!!", "jumlah pinjaman tidak valid", "warning");
-                $("#jumlah_pinjaman").focus();
+            if ($("#nama_anggota").val() == ""){
+                swal("Waduwh!!!", "Nama anggota belum terisi", "warning");
+                $("#nama_anggota").focus();
                 return false;
             }
-            if (bunga_pertahun == "" || bunga_pertahun == "0" || bunga_pertahun == null || /^([a-zA-Z])$/.test(bunga_pertahun) ){
-                swal("Waduwh!!!", "Bunga pertahun tidak valid mohon isi 1-100", "warning");
-                $("#bunga_pertahun").focus();
-                return false
-            }
-            if (tenor == "" || tenor == "0" || tenor == null || /^([a-zA-Z])$/.test(tenor)){
-                swal("Waduwh!!!", " Lama cicilan tidak valid", "warning");
-                $("#tenor").focus();
-                return false
+
+            if ($("#no_ktp").val() == ""){
+                swal("Waduwh!!!", "No. KTP/SIM belum terisi", "warning");
+                $("#no_ktp").focus();
+                return false;
             }
 
+            if ($("#alamat").val() == ""){
+                swal("Waduwh!!!", "Alamat belum terisi", "warning");
+                $("#alamat").focus();
+                return false;
+            }
+
+            if ($("#telepon").val() == ""){
+                swal("Waduwh!!!", "Telepon belum terisi", "warning");
+                $("#telepon").focus();
+                return false;
+            }
             return true;
 
             alert("end validation")
         }
 
-        function hit_register_pinjaman () {
+        function hit_register_pengambilan () {
             if (!input_validation()) {
                 return;
-            } else {
-                // alert("tembak belakang")
-                var json_obj = new Object();
-                json_obj.tanggal_setoran = $("#datetimepicker1").val()
-                json_obj.id_transaksi = $("#id_transaksi").val()
-                json_obj.id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
-                json_obj.jumlah_pinjaman = $("#jumlah_pinjaman").val();
-                json_obj.bunga_pertahun = $("#bunga_pertahun").val();
-                json_obj.tenor = $("#tenor").val();
-                json_obj.angsuran_perbulan = $("#angsuran_perbulan").val();
-                console.log(json_obj);
-                json_obj.insert_by = sessionStorage.getItem("username")
-                console.log(json_obj);
-                swal({
-                    title: "Yakin data sudah benar?",
-                    text: "You will not be able to recover this imaginary file!",
-                    type: "warning",
-                    showCancelButton: true,
-                    confirmButtonColor: "#DD6B55",
-                    confirmButtonText: "Yes, data sudah benar!",
-                    closeOnConfirm: false
-                }, function (isConfirm) {
-                    if (!isConfirm) return;
-                    console.log(JSON.stringify(json_obj))
-                    $.ajax({
-                        url: "http://47.74.245.145:5000/register_pinjaman",
-                        type: "POST",
-                        data: JSON.stringify(json_obj),
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        success: function (data) {
-                            swal("Done!", "It was succesfully updated!", "success");
-                            setTimeout(
-                                function()
-                                {
-                                    window.location.href = 'list_pinjaman.html';
-                                }, 1500);
-                        },
-                        error: function (xhr, ajaxOptions, thrownError) {
-                            swal("Error!", "Please try again", "error");
+            }
+            // alert("tembak belakang")
+            var json_obj = new Object();
+            json_obj.tanggal_pengambilan = $("#datetimepicker1").val()
+            json_obj.id_transaksi_pengambilan = $("#id_transaksi").val()
+            json_obj.id_transaksi_peminjaman = $("#id_transaksi_peminjaman").val()
+            json_obj.id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
+            json_obj.insert_by = sessionStorage.getItem("username")
+            console.log(json_obj);
+            swal({
+                title: "Yakin data sudah benar?",
+                text: "You will not be able to recover this imaginary file!",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes, data sudah benar!",
+                closeOnConfirm: false
+            }, function (isConfirm) {
+                if (!isConfirm) return;
+                console.log(JSON.stringify(json_obj))
+                $.ajax({
+                    url: "http://47.74.245.145:5000/register_pengambilan",
+                    type: "POST",
+                    data: JSON.stringify(json_obj),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        swal("Done!", "Pengambilan berhasil dilakukan!", "success");
+                        setTimeout(
+                            function()
+                            {
+                                window.location.href = 'list_pengambilan.html';
+                            }, 1500);
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        swal("Error!", "Please try again", "error");
+                    }
+                });
+            });
+        }
+
+
+        function get_data_pinjaman () {
+            var id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
+            if (id_anggota.length > 1) {
+                $.ajax({
+                    type: "GET",
+                    url: "http://47.74.245.145:5000/get_detail_pinjaman/"+id_anggota,
+                    // The key needs to match your method's input parameter (case-sensitive).
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function(data){
+                        console.log(data);
+                        var jumlah_pinjaman = data['jumlah_pinjaman'];
+                        var saldo = data['saldo'];
+                        var id_kredit = data['id_kredit'];
+                        if (data['response'] == 'OK') {
+                            document.getElementById("id_transaksi_peminjaman").value = id_kredit;
+                            document.getElementById("saldo").value = saldo;
+                            document.getElementById("jumlah_pinjaman").value = jumlah_pinjaman;
+                        } else {
+                            swal("Uhh.. Ohh!!!", "Mohon Pilih ID Anggota / Nama Anggota", "error");
                         }
-                    });
+                    },
+                    error: function(XMLHttpRequest, textStatus, errorThrown) {
+                        swal("Uhh.. Ohh!!!", "Gagal, Mohon Cek API", "error");
+                    }
                 });
             }
+
+
         }
     </script>
 
