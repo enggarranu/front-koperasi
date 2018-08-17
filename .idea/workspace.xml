@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_pinjaman.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/list_anggota.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_anggota.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sidebar-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sidebar-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,8 +20,13 @@
       <file leaf-file-name="form_bayar_cicilan.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="291" column="195" selection-start-line="291" selection-start-column="195" selection-end-line="291" selection-end-column="195" />
+            <state relative-caret-position="140">
+              <caret line="1147" column="65" selection-start-line="1147" selection-start-column="52" selection-end-line="1147" selection-end-column="65" />
+              <folding>
+                <element signature="e#66310#66316#0" expanded="true" />
+                <element signature="e#66414#66420#0" expanded="true" />
+                <element signature="e#66421#66427#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,13 +43,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jenis_simpanan</find>
-      <find>jenis_role</find>
-      <find>mohon lengkapi form</find>
-      <find>mohon leng</find>
-      <find>password</find>
-      <find>nama_petugas</find>
-      <find>register</find>
       <find>username</find>
       <find>hit</find>
       <find>it</find>
@@ -72,6 +66,13 @@
       <find>list_nama_anggota</find>
       <find>id_transaksi</find>
       <find>nama angg</find>
+      <find>id_pembayaran</find>
+      <find>get_data_pinjaman</find>
+      <find>sisa_pinjama</find>
+      <find>angsuran</find>
+      <find>angsuran_ke</find>
+      <find>hit_register_pengambilan</find>
+      <find>hit_bayar</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
@@ -152,9 +153,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="949" />
-    <option name="width" value="979" />
-    <option name="height" value="1055" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -172,11 +173,6 @@
               <item name="koperasi" type="b2602c69:ProjectViewProjectNode" />
               <item name="koperasi" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="koperasi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="koperasi" type="462c0819:PsiDirectoryNode" />
-              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -265,7 +261,9 @@
       <workItem from="1533711689173" duration="2467000" />
       <workItem from="1533953442495" duration="2432000" />
       <workItem from="1534042373742" duration="1321000" />
-      <workItem from="1534392466387" duration="2531000" />
+      <workItem from="1534392466387" duration="3781000" />
+      <workItem from="1534489586501" duration="1814000" />
+      <workItem from="1534519878555" duration="5291000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -393,17 +391,23 @@
       <option name="project" value="LOCAL" />
       <updated>1533713144793</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Bayar Cicilan">
+      <created>1534401341106</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1534401341107</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200599000" />
+    <option name="totallyTimeSpent" value="208954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1618" height="887" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2991239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29900125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -423,27 +427,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32979977" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2991239" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32979977" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Messages" order="8" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -464,7 +447,8 @@
     <MESSAGE value="add menu sidebar and add form petugas" />
     <MESSAGE value="Improve Register Petugas" />
     <MESSAGE value="Add login Management Page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add login Management Page" />
+    <MESSAGE value="Bayar Cicilan" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bayar Cicilan" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -672,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login_management.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="985" column="49" selection-start-line="985" selection-start-column="49" selection-end-line="985" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_petugas.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -686,10 +663,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/login_management.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="1109" column="27" selection-start-line="1109" selection-start-column="18" selection-end-line="1109" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="291" column="195" selection-start-line="291" selection-start-column="195" selection-end-line="291" selection-end-column="195" />
+        <state relative-caret-position="140">
+          <caret line="1147" column="65" selection-start-line="1147" selection-start-column="52" selection-end-line="1147" selection-end-column="65" />
+          <folding>
+            <element signature="e#66310#66316#0" expanded="true" />
+            <element signature="e#66414#66420#0" expanded="true" />
+            <element signature="e#66421#66427#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

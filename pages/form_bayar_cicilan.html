@@ -332,6 +332,20 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
 
                                             <div class="form-group">
+                                                <label>Angsuran</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" id="angsuran" readonly=""></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label>Angsuran Ke</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" id="angsuran_ke" readonly=""></div>
+                                            </div>
+
+                                            <div class="form-group">
                                                 <label>Denda</label>
                                                 <div class="input-icon">
                                                     <i class="fa fa-money"></i>
@@ -363,10 +377,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                                            readonly=""></div>
                                             </div>
 
+                                            <div class="form-group">
+                                                <label>Sisa Angsuran</label>
+                                                <div class="input-icon">
+                                                    <i class="fa fa-money"></i>
+                                                    <input type="text" class="form-control" placeholder="nominal" id="sisa_angsuran"
+                                                           readonly=""></div>
+                                            </div>
+
 
                                         </div>
                                         <div class="form-actions">
-                                            <button type="button" class="btn blue" onclick="hit_register_pengambilan()">Submit</button>
+                                            <button type="button" class="btn blue" onclick="hit_bayar_cicilan()">Submit</button>
                                             <button type="button" class="btn default">Cancel</button>
                                         </div>
                                     </form>
@@ -1036,11 +1058,6 @@ License: You must have a valid license purchased only from themeforest(the above
                         }
                         document.getElementById('list_nama_anggota').innerHTML = options;
 
-
-
-
-
-
                     } else {
                         swal("Uhh.. Ohh!!!", "Gagal generate ID Anggota", "error");
                     }
@@ -1053,7 +1070,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
             $(".form-group").keypress(function (e) {
                 if (e.which == '13') {
-                    hit_register_pengambilan();
+                    hit_bayar_cicilan();
                 }
             });
 
@@ -1098,16 +1115,22 @@ License: You must have a valid license purchased only from themeforest(the above
             alert("end validation")
         }
 
-        function hit_register_pengambilan () {
+        function hit_bayar_cicilan () {
             if (!input_validation()) {
                 return;
             }
             // alert("tembak belakang")
             var json_obj = new Object();
-            json_obj.tanggal_pengambilan = $("#datetimepicker1").val()
-            json_obj.id_transaksi_pengambilan = $("#id_transaksi").val()
-            json_obj.id_transaksi_peminjaman = $("#id_transaksi_peminjaman").val()
+            json_obj.id_pembayaran = $("#id_pembayaran").val()
             json_obj.id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
+            json_obj.tanggal_pembayaran = $("#datetimepicker1").val()
+            json_obj.denda = $("#denda").val()
+            json_obj.tanggal_tempo_pembayaran = $("#tanggal_tempo_pembayaran").val()
+            json_obj.jumlah_pembayaran = $("#jumlah_pembayaran").val()
+            json_obj.sisa_pinjaman = $("#sisa_pinjaman").val()
+            json_obj.id_kredit = $("#id_pinjaman").val()
+            json_obj.angsuran_ke = $("#angsuran_ke").val()
+            json_obj.sisa_angsuran = $("#sisa_angsuran").val()
             json_obj.insert_by = sessionStorage.getItem("username")
             console.log(json_obj);
             swal({
@@ -1122,13 +1145,13 @@ License: You must have a valid license purchased only from themeforest(the above
                 if (!isConfirm) return;
                 console.log(JSON.stringify(json_obj))
                 $.ajax({
-                    url: "http://47.74.245.145:5000/register_pengambilan",
+                    url: "http://47.74.245.145:5000/bayar_cicilan",
                     type: "POST",
                     data: JSON.stringify(json_obj),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function (data) {
-                        swal("Done!", "Pengambilan berhasil dilakukan!", "success");
+                        swal("Done!", "Pembayaran berhasil dilakukan!", "success");
                         setTimeout(
                             function()
                             {
@@ -1144,23 +1167,38 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
         function get_data_pinjaman () {
-            var id_anggota = (($("#id_anggota").val()).split("|")[0]).trim();
-            if (id_anggota.length > 1) {
+            var json_obj = new Object();
+            var id_kredit = (($("#id_anggota").val()).split("|")[2]).trim();
+            json_obj.id_kredit = id_kredit
+            if (id_kredit.length > 1) {
                 $.ajax({
-                    type: "GET",
-                    url: "http://47.74.245.145:5000/get_detail_pinjaman/"+id_anggota,
+                    type: "POST",
+                    url: "http://47.74.245.145:5000/inquiry_pembayaran",
+                    data: JSON.stringify(json_obj),
                     // The key needs to match your method's input parameter (case-sensitive).
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
                     success: function(data){
                         console.log(data);
-                        var jumlah_pinjaman = data['jumlah_pinjaman'];
-                        var saldo = data['saldo'];
-                        var id_kredit = data['id_kredit'];
+                        // var response = data["response"]
+                        var jumlah_pinjaman = data["jumlah_pinjaman"]
+                        var jatuh_tempo = data["jatuh_tempo"]
+                        var angsuran = data["angsuran"]
+                        var sisa_pinjaman = data["sisa_pinjaman"]
+                        var denda = data["denda"]
+                        var jumlah_pembayaran = data["jumlah_pembayaran"]
+                        var sisa_angsuran = data["sisa_angsuran"]
+                        var angsuran_ke = data["pembayaran_ke"]
                         if (data['response'] == 'OK') {
-                            document.getElementById("id_transaksi_peminjaman").value = id_kredit;
-                            document.getElementById("saldo").value = saldo;
+                            document.getElementById("id_pinjaman").value = id_kredit;
                             document.getElementById("jumlah_pinjaman").value = jumlah_pinjaman;
+                            document.getElementById("angsuran").value = angsuran;
+                            document.getElementById("denda").value = denda;
+                            document.getElementById("tanggal_tempo_pembayaran").value = jatuh_tempo;
+                            document.getElementById("jumlah_pembayaran").value = jumlah_pembayaran;
+                            document.getElementById("sisa_pinjaman").value = sisa_pinjaman;
+                            document.getElementById("sisa_angsuran").value = sisa_angsuran;
+                            document.getElementById("angsuran_ke").value = angsuran_ke;
                         } else {
                             swal("Uhh.. Ohh!!!", "Mohon Pilih ID Anggota / Nama Anggota", "error");
                         }
