@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0e7343c2-198d-4728-aa97-c5d3d2560155" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/form_bayar_cicilan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list_pengambilan.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_pengambilan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/list_pinjaman.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/list_pinjaman.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +18,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="form_bayar_cicilan.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="form_bayar_cicilan.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
@@ -27,6 +28,15 @@
                 <element signature="e#66414#66420#0" expanded="true" />
                 <element signature="e#66421#66427#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_pinjaman.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="312" column="61" selection-start-line="312" selection-start-column="61" selection-end-line="312" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -43,8 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>username</find>
-      <find>hit</find>
       <find>it</find>
       <find>basic</find>
       <find>login man</find>
@@ -73,6 +81,8 @@
       <find>angsuran_ke</find>
       <find>hit_register_pengambilan</find>
       <find>hit_bayar</find>
+      <find>pinjaman</find>
+      <find>tangga</find>
     </findStrings>
     <replaceStrings>
       <replace>./</replace>
@@ -124,10 +134,8 @@
         <option value="$PROJECT_DIR$/pages/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/pages/list_setoran.html" />
-        <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
         <option value="$PROJECT_DIR$/pages/form_setoran.html" />
         <option value="$PROJECT_DIR$/pages/form_pengambilan.html" />
-        <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
         <option value="$PROJECT_DIR$/pages/form_anggota.html" />
         <option value="$PROJECT_DIR$/pages/sidebar-menu-user.html" />
         <option value="$PROJECT_DIR$/pages/form_petugas.html" />
@@ -137,6 +145,8 @@
         <option value="$PROJECT_DIR$/pages/form_pinjaman.html" />
         <option value="$PROJECT_DIR$/pages/sidebar-menu.html" />
         <option value="$PROJECT_DIR$/pages/form_bayar_cicilan.html" />
+        <option value="$PROJECT_DIR$/pages/list_pengambilan.html" />
+        <option value="$PROJECT_DIR$/pages/list_pinjaman.html" />
       </list>
     </option>
   </component>
@@ -153,15 +163,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1053" />
+    <option name="x" value="948" />
+    <option name="width" value="980" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,7 +189,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,7 +273,9 @@
       <workItem from="1534042373742" duration="1321000" />
       <workItem from="1534392466387" duration="3781000" />
       <workItem from="1534489586501" duration="1814000" />
-      <workItem from="1534519878555" duration="5291000" />
+      <workItem from="1534519878555" duration="5384000" />
+      <workItem from="1534569128301" duration="693000" />
+      <workItem from="1535429465801" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="fix fingsi pinjaman">
       <created>1530877508124</created>
@@ -398,16 +410,24 @@
       <option name="project" value="LOCAL" />
       <updated>1534401341107</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Bayar Cicilan">
+      <created>1534531900749</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1534531900749</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208954000" />
+    <option name="totallyTimeSpent" value="210233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1618" height="887" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29900125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29900125" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -579,24 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="953" column="24" selection-start-line="953" selection-start-column="24" selection-end-line="953" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="307" column="55" selection-start-line="307" selection-start-column="55" selection-end-line="307" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -670,6 +676,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_pengambilan.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="306" column="57" lean-forward="true" selection-start-line="306" selection-start-column="57" selection-end-line="306" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/form_bayar_cicilan.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -679,6 +692,13 @@
             <element signature="e#66414#66420#0" expanded="true" />
             <element signature="e#66421#66427#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/list_pinjaman.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="312" column="61" selection-start-line="312" selection-start-column="61" selection-end-line="312" selection-end-column="61" />
         </state>
       </provider>
     </entry>
